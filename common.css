@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@300;400;700;900&display=swap');
+@font-face {
+    font-family: 'PPGrafier-BlackDisplay';
+    src: url(./PPGrafier-BlackDisplay.woff) format('woff');
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{color: #333;}
+body::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* 풀스크린 */
+#wrap .section:nth-of-type(1),
+#wrap .section:nth-of-type(6){
+    background: url(./image/bg1-2.svg) center/cover;
+}
+#wrap .section:nth-of-type(2),
+#wrap .section:nth-of-type(3),
+#wrap .section:nth-of-type(4),
+#wrap .section:nth-of-type(5){
+    background: url(./image/bg2-2.svg) center/cover;
+}
+
+
+.cau{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: block;
+}
+.cau .box{
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7%;
+    box-sizing: border-box;
+    background-color: #fff;
+    font: 400 1.5em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+.cau .box h2{
+    margin-bottom: 20px;
+}
+.cau .box .btn{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font: 400 1.1em/1em 'Noto Sans KR','Roboto', sans-serif;
+}

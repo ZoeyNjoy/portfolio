@@ -1,0 +1,159 @@
+body{font-size: 2vw;}
+
+/* 메뉴바 */
+.menu{
+    width: 80%;
+}
+#home .bg .txt p{
+    text-align: center;
+    font: bold 7em/2em 'PPGrafier-BlackDisplay';
+}
+/* #about 2page */
+#about .profile{
+    margin-top: 15%;
+    flex-wrap: wrap;
+}
+.profile .left{
+    width: 50%;
+}
+.left img{
+    width: 80%;
+    margin-left: 8%;
+}
+.left p{
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.profile .right{
+    width: 50%;
+    position: relative;
+}
+
+.about p:nth-child(3){
+    position: unset;
+}
+.edu::before,
+.work::before,
+.skill::before{
+    content: '';
+    display: block;
+    margin-bottom: 15%;
+}
+.about span,
+.edu span,
+.work span{
+    width: 20%;
+}
+.skill{
+    width: 160%;
+    position: absolute;
+    left: -79%;
+    margin-top: -20%;
+}
+
+
+
+/* 3번쩨 페이지 */
+#sona .main img{
+    width: 100%;
+}
+#sona .main a{
+    width: 20%;
+    top: 55%;
+    left: 70%;
+}
+#sona .main .sub{
+    top: 30%;
+}
+
+/* 4페이지 */
+#app .slide .main img:not(a img){
+    width:100%;
+}
+#app .main a，
+#app .main a img{
+    display: none;
+}
+#app .slide .main .sub{
+    top: 30%;
+    width: 75%;
+}
+.slide:nth-child(5) img{
+    width: 90%;
+    position: absolute;
+    left:50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.slide:nth-child(5) video{
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* 5페이지 */
+#etc .main .image{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+#etc .main .image ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#etc .main .image li{
+    width: 30%;
+    margin-bottom: 5%;
+}
+#etc .main .image li a{
+    color: initial;
+}
+#etc .main .image li:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+#etc .main .image li span{
+    font: 400 1.2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+}
+#etc .main .image li img{
+    width: 100%;
+    border: 2px solid #ccc;
+}
+#etc .main .sub{
+    position: absolute;
+    top: 20%;
+    left:10%;
+    transform: translateY(-50%);
+    width: 80%;
+}
+#etc .main .sub p{
+    font: bold 2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+    display: flex;
+}
+#etc .main .sub p:nth-child(2){
+    display: none;
+}
+
+#etc .main .popup{
+    width: 85%;
+    height: 90%;
+    display: none;
+}
+#etc .main .popup img{
+    width: 100%;
+    height: auto;
+}
+
+/* 6번째 페이지 */
+#foot .copy{
+    width: 70%;
+}

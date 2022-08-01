@@ -1,0 +1,232 @@
+body{font-size:2vw;}
+
+/* 메뉴바 */
+.menu{
+    width: 90%;
+    right: 3%;
+}
+.menu ul{
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#home .bg .txt p{
+    text-align: center;
+    font: bold 7em/2em 'PPGrafier-BlackDisplay';
+}
+
+    
+/* #about 2page */
+#about .profile{
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+.profile .left{
+    width: 100%;
+    display: flex;
+}
+.left img{
+    width: 35%;
+    margin-left: 10%;
+}
+.left p{
+    width: 50%;
+    margin-left: 0;
+    margin-top: 30%;
+}
+.profile .right{
+    width: 100%;
+    margin-top: 3%;
+    position: relative;
+    font: 400 1.2em/1.7em 'Noto Sans KR','Roboto', sans-serif;
+}
+.about p:nth-child(3){
+    position: unset;
+}
+.edu::before,
+.work::before,
+.skill::before{
+    content: '';
+    display: block;
+    margin-bottom: 5%;
+}
+.about span,
+.edu span,
+.work span{
+    margin-left: 1%;
+    width: 26%;
+    font-weight: 600;
+}
+.skill li{
+    width: 90%;
+    display: flex;
+    border-left: 2px solid #333;
+}
+.skill p:nth-child(1){
+    width: 19%;
+}
+
+/* 3번쩨 페이지 */
+#sona .main img{
+    width: 100%;
+}
+#sona .main a{
+    width: 35%;
+    top: 65%;
+    left: 10%;
+    font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+#sona .main .sub{
+    top: 35%;
+    width: 80%;
+    font: bold 1.8em/1.8em 'Noto Sans KR','Roboto', sans-serif;
+}
+
+/* 4페이지 */
+#app .slide .main img:not(a img){
+    width:100%;
+}
+#app .slide .main .sub{
+    top: 30%;
+    width: 75%;
+
+    font: bold 1.8em/1.8em 'Noto Sans KR','Roboto', sans-serif;
+}
+#app .main .clickbox{
+    width: 36%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: block;
+    color: inherit;
+    font: bold 1.8em/1.8em 'Noto Sans KR','Roboto', sans-serif;
+}
+#app .main a img{
+    display: block;
+    width:20%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.slide:nth-child(5) img{
+    width: 90%;
+    position: absolute;
+    left:50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.slide:nth-child(5) video{
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transform: translateY(-50%);
+    
+    z-index: 2;
+}
+.slide:nth-child(2),
+.slide:nth-child(3),
+.slide:nth-child(4){
+    display: none;
+}
+.fp-arrow.fp-prev {
+    border-width: 20px 15px 20px 0;
+    border-color: transparent #ffec6b transparent transparent;
+}
+.fp-arrow.fp-next {
+    border-width: 20px 20px 20px 15px;
+    border-color: transparent transparent transparent #ffec6b;
+}
+
+/* 5페이지 */
+#etc .main .image{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+#etc .main .image li{
+    width: 45%;
+    margin-bottom: 5%;
+}
+#etc .main .image li span{
+    font: 400 2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+}
+#etc .main .sub{
+    top: 7%;
+    width: 90%;
+}
+#etc .main .sub p{
+    font: bold 2.5em/1.3em 'Noto Sans KR','Roboto', sans-serif;
+    display: flex;
+}
+#etc .main .sub p:nth-child(2){
+    display: none;
+}
+
+#etc .main .popup{
+    width: 85%;
+    height: 90%;
+    display: none;
+}
+#etc .main .popup img{
+    width: 100%;
+    height: auto;
+}
+
+/* 6번째 페이지 */
+#foot{position: relative;}
+#foot .f_txt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 74%;
+}
+#foot .f_txt .title{
+    font: bold 5em/1.5em 'PPGrafier-BlackDisplay';
+    margin-bottom: 25px;
+}
+#foot .f_txt p{
+    font: bold 2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+#foot .copy{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 400 1.2em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+#foot .copy p:nth-child(2){
+    font: 400 0.8em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+}
+#foot .f_txt span{
+    font-weight: bolder;
+}
+#foot .bgtxt:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    font: bold 10vh 'PPGrafier-BlackDisplay';
+    writing-mode: vertical-rl;
+    color: #fff;
+    z-index: 1;
+}
+#foot .bgtxt:nth-child(3){
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    font: bold 10vh 'PPGrafier-BlackDisplay';
+    writing-mode: vertical-rl;
+    color: #fff;
+    z-index: 1;
+}
