@@ -6,11 +6,19 @@ new fullpage(
         if(origin.index==1 && destination.index==0){
             $('.profile .left').hide(1000);
         }else if(origin.index==0 && destination.index==1){
-            $('.profile .left').show(500);
+            $('.profile .left').show(100);
         }else if(origin.index==1 && destination.index==2){
             $('.profile .left').hide(1000);
         }else if(origin.index==2 && destination.index==1){
-            $('.profile .left').show(500);
+            $('.profile .left').show(100);
+        }else if(origin.index==3 && destination.index==4){
+            $('#etc .main .image').show(500);
+        }else if(origin.index==4 && destination.index==5){
+            $('#etc .main .image').hide(1000);
+        }else if(origin.index==5 && destination.index==4){
+            $('#etc .main .image').show(500);
+        }else if(origin.index==4 && destination.index==3){
+            $('#etc .main .image').hide(1000);
         }
     },
     navigation:true

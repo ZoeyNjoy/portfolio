@@ -59,7 +59,7 @@ body{font-size: 1vw;}
     width: 40%;
     position: relative;
     left: 0;
-    animation: in 1.5s ease-in-out;
+    animation: in 1s ease-in-out;
 }
 .left img{
     width: 70%;
@@ -206,6 +206,10 @@ body{font-size: 1vw;}
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+}
+#sona .main a:hover{
+    transform: translateX(20px);
+    transition: all .3s ease-in-out;
 }
 #sona .main .sub{
     position: absolute;
