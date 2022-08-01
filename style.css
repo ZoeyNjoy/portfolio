@@ -1,7 +1,7 @@
 body{font-size: 1vw;}
 /* 메뉴바 */
 .menu{
-    width: 40%;
+    width: 60%;
     position: fixed;
     top: 0;
     right: 0;
@@ -15,14 +15,12 @@ body{font-size: 1vw;}
     justify-content: space-between;
 }
 .menu li{
-    /* width: 16.5%; */
     text-align: center;
-    /* border: 1px solid red; */
 }
 .menu li a{
     cursor: pointer;
     width: 100%;
-    font: bold 1.2em/3em 'Noto Sans KR','Roboto', sans-serif;    
+    font: bold 1.5em/3em 'Noto Sans KR','Roboto', sans-serif;    
     color: #333;
 }
 .menu li:hover a{
@@ -307,7 +305,7 @@ body{font-size: 1vw;}
 }
 #etc .main .image li{
     width: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 #etc .main .image li a{
     color: initial;
@@ -370,7 +368,7 @@ body{font-size: 1vw;}
 #foot{position: relative;}
 #foot .f_txt{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
