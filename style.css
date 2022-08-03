@@ -79,9 +79,6 @@ body{font-size: 1vw;}
 .profile .ani1{
     animation: in .5s ease-in-out;
 }
-.profile .ani2{
-    animation: out .5s ease-in-out;
-}
 @keyframes in{
     from{
         left: -500px;
@@ -90,16 +87,6 @@ body{font-size: 1vw;}
     to{
         left: 0;
         opacity: 1;
-    }
-}
-@keyframes out{
-    from{
-        left: 0;
-        opacity: 1;
-    }
-    to{
-        left: -500px;
-        opacity: 0;
     }
 }
 .profile .right{
@@ -230,57 +217,6 @@ body{font-size: 1vw;}
 
 
 /* 4페이지 */
-#app .slide{
-    position: relative;
-}
-#app .slide .main{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-#app .slide .main img:not(a img){
-    width:65%;
-    position: absolute;
-    bottom: 0;
-    right:0;
-}
-#app .main .clickbox{
-    display: none;
-}
-#app .slide .main .sub{
-    position: absolute;
-    top: 40%;
-    left:10%;
-    transform: translateY(-50%);
-    width: 30%;
-}
-#app .slide .main .sub p{
-    font: bold 1.5em/1.5em 'Noto Sans KR','Roboto', sans-serif;
-}
-#app .slide .main .sub p:nth-child(1){
-    font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
-}
-.slide:nth-child(5) img{
-    width: 65%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.slide:nth-child(5) video{
-    width: 30%;
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-
-/* 5번째 페이지 */
 #etc{
     position: relative;
 }
@@ -296,9 +232,9 @@ body{font-size: 1vw;}
 #etc .main .image{
     position: absolute;
     top: 55%;
-    right: 5%;
-    transform: translateY(-50%);
-    width: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
 }
 #etc .main .image ul{
     width: 100%;
@@ -307,7 +243,7 @@ body{font-size: 1vw;}
     justify-content: space-between;
 }
 #etc .main .image li{
-    width: 30%;
+    width: 24%;
     margin-bottom: 1%;
 }
 #etc .main .image li a{
@@ -339,32 +275,41 @@ body{font-size: 1vw;}
 }
 
 #etc .main .popup{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 90%;
+    height: 80%;
     background-color: #fff;
     z-index: 5;
     display: none;
+    overflow-y: scroll;
 }
+.popup::-webkit-scrollbar{
+    width: 15px;
+}
+.popup::-webkit-scrollbar-thumb {
+    background-color: #ffec6b;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+}
+
 #etc .main .popup img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
+    width: 100%;
 }
-#etc .main .popup .close{
+#etc .main .close{
     width: 70px;
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
+    height: 35px;
+    box-sizing: border-box;
+    position: sticky;
+    bottom: 2%;
+    left: 92%;
+    border: 0;
     font: 400 1.2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
     background-color:transparent;
-    border: 0;
     z-index: 6;
+    padding: 0;
 }
 .profile .ani3{
     animation: in2 .5s ease-in-out;
@@ -382,7 +327,7 @@ body{font-size: 1vw;}
         opacity: 1;
     }
 }
-@keyframes ou2t{
+@keyframes out2{
     from{
         right: 0;
         opacity: 1;
@@ -428,7 +373,7 @@ body{font-size: 1vw;}
 #foot .bgtxt:nth-child(2){
     position: absolute;
     top: 50%;
-    left: -50px;
+    left: -25px;
     transform: translateY(-50%);
     font: bold 10vh 'PPGrafier-BlackDisplay';
     writing-mode: vertical-rl;
@@ -438,7 +383,7 @@ body{font-size: 1vw;}
 #foot .bgtxt:nth-child(3){
     position: absolute;
     top: 50%;
-    right: -50px;
+    right: -25px;
     transform: translateY(-50%);
     font: bold 10vh 'PPGrafier-BlackDisplay';
     writing-mode: vertical-rl;
