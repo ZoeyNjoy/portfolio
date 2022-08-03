@@ -28,11 +28,11 @@ return "";
 $('#close').on('click',function(){
 
 setCookie('divpop', 'Y' , 1 );
-$(".poptoday").hide();
+$(".cau").hide();
 });
 
 console.log(getCookie('divpop'));
 
 if(getCookie('divpop') == 'Y'){
-$(".poptoday").hide();
+$(".cau").hide();
 }
