@@ -94,15 +94,6 @@ anime({
 });
 
 
-
-// colorbox
-    $('.clickbox').colorbox({
-        Width:'100%',
-        innerWidth:'100%',
-        
-    });
-
-
 // 5번재 페이지 팝업
 $('#etc .main .image ul li a').on('click',function(e){
     e.preventDefault();

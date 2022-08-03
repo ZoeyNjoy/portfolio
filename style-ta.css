@@ -68,35 +68,6 @@ body{font-size: 2vw;}
 }
 
 /* 4페이지 */
-#app .slide .main img:not(a img){
-    width:100%;
-}
-#app .main a，
-#app .main a img{
-    display: none;
-}
-#app .slide .main .sub{
-    top: 30%;
-    width: 75%;
-}
-.slide:nth-child(5) img{
-    width: 90%;
-    position: absolute;
-    left:50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-.slide:nth-child(5) video{
-    width: 35%;
-    position: absolute;
-    left: 10%;
-    top: 35%;
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-/* 5페이지 */
 #etc .main .image{
     position: absolute;
     top: 60%;
@@ -153,7 +124,8 @@ body{font-size: 2vw;}
     height: auto;
 }
 
-/* 6번째 페이지 */
+
+/* 5페이지 */
 #foot .copy{
     width: 70%;
 }
