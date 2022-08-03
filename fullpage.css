@@ -1,13 +1,94 @@
-/*!
- * fullPage 4.0.9
- * https://github.com/alvarotrigo/fullPage.js
- *
- * @license GPLv3 for open source use only
- * or Fullpage Commercial License for commercial use
- * http://alvarotrigo.com/fullPage/pricing/
- *
- * Copyright (C) 2021 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
- */
+*{margin:0;padding: 0;}
+li{list-style: none;}
+
+#fullpage .section:nth-child(1){background: green;color:white;}
+#fullpage .section:nth-child(2){background: gray;color:white;}
+#fullpage .section:nth-child(3){background: orange;color:white;}
+#fullpage .section:nth-child(4){background: pink;color:white;}
+#menu{
+    width:100%;
+    height:7vh;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:10;
+    color:white;
+}
+#menu ul{width:100%;height:100%;display: flex;flex-wrap: wrap;}
+#menu li{flex:0 1 25%;height: 100%;text-align: center;line-height: 3rem;cursor: pointer;}
+#fullpage #myVideo{
+    position: absolute;
+    width:100%;
+    height:100%;    
+    background-color:black;
+    z-index: 2;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+#fullpage #box{
+    position: absolute;
+    width:90%;
+    height:85%;    
+    background:white;
+    text-align: center;
+    z-index:3;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#box ul{width:100%;height:100%;display: flex;}
+#box li{width:50%;height: 100%;background: rgba(0,0,0,0.4);}
+/* #box li:nth-child(1){background: rgba(0,0,0,0.4);}
+#box li:nth-child(2){background: blue;} */
+
+#fullpage .section:nth-child(3) .st0{
+    fill:none;
+    stroke:#078B00;
+    stroke-width:11;
+    stroke-miterlimit:10;
+}
+#fullpage .section:nth-child(3) .st0:nth-child(1){
+    stroke-dasharray: 1198;
+    stroke-dashoffset: 1198;
+}
+#fullpage .section:nth-child(3) .st0:nth-child(2){
+    stroke-dasharray: 1245;
+    stroke-dashoffset: 1245;
+
+}
+#fullpage .section:nth-child(3) .st0:nth-child(3){
+    stroke-dasharray: 2209;
+    stroke-dashoffset: 2209;
+}
+#fullpage .section:nth-child(3) path.ani1{
+    animation: ani1 2s forwards;
+}
+
+#fullpage .section:nth-child(3) path.ani2{
+    animation: ani2 2s forwards;
+}
+#fullpage .section:nth-child(3) path.ani3{
+    animation: ani3 2s forwards;
+}
+
+
+@keyframes ani1{
+    0%{ stroke-dashoffset: 1198;}
+    100%{ stroke-dashoffset: 0;}
+}
+@keyframes ani2{
+    0%{ stroke-dashoffset: 1245;}
+    100%{ stroke-dashoffset: 0;}
+}
+@keyframes ani3{
+    0%{ stroke-dashoffset: 2209;}
+    100%{ stroke-dashoffset: 0;}
+}
+
+
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -22,8 +103,6 @@ html.fp-enabled,
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
-    height: 100%;
-    display: block;
 }
 .fp-slide {
     float: left;
@@ -40,18 +119,16 @@ html.fp-enabled,
     -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
     transition: all 0.3s ease-out;
 }
-.fp-table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* text-align: center; */
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
     width: 100%;
 }
-/* .fp-table::before , 
-.fp-table::after {
-      content:'';
-      flex:1;
-} */
+.fp-tableCell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+}
 .fp-slidesContainer {
     float: left;
     position: relative;
@@ -65,45 +142,35 @@ html.fp-enabled,
     z-index: 4;
     top: 50%;
     cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
     margin-top: -38px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.fp-prev{
+.fp-controlArrow.fp-prev {
     left: 15px;
-}
-.fp-next{
-    right: 15px;
-}
-.fp-arrow{
     width: 0;
-    height: 0;
-    border-style: solid;
-}
-.fp-arrow.fp-prev {
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #ffec6b transparent transparent;
+    border-color: transparent #fff transparent transparent;
 }
-.fp-arrow.fp-next {
-    border-width: 38.5px 20px 38.5px 34px;
-    border-color: transparent transparent transparent #ffec6b;
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
 }
-.fp-arrow.fp-prev:hover,
-.fp-arrow.fp-next:hover{
-    filter:drop-shadow(0 0 3px #aaa);
-    transition: all .5s;
-}
-/* .fp-scrollable {
+.fp-scrollable {
     overflow: hidden;
     position: relative;
-} */
-/* .fp-scroller{
+}
+.fp-scroller{
     overflow: hidden;
-} */
-/* .iScrollIndicator{
+}
+.iScrollIndicator{
     border: 0 !important;
-} */
+}
 .fp-notransition {
     -webkit-transition: none !important;
     transition: none !important;
@@ -118,10 +185,10 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,-50%,0);
 }
 #fp-nav.fp-right {
-    right: 1px;
+    right: 17px;
 }
 #fp-nav.fp-left {
-    left: 1px;
+    left: 17px;
 }
 .fp-slidesNav{
     position: absolute;
@@ -140,28 +207,21 @@ html.fp-enabled,
 .fp-slidesNav.fp-top {
     top: 17px;
 }
-#fp-nav ul{
+#fp-nav ul,
+.fp-slidesNav ul {
   margin: 0;
   padding: 0;
 }
-#fp-nav ul li{
+#fp-nav ul li,
+.fp-slidesNav ul li {
     display: block;
-    width: 30px;
+    width: 14px;
     height: 13px;
-    margin: 10px 0;
+    margin: 7px;
     position:relative;
-}
-.fp-slidesNav ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 .fp-slidesNav ul li {
     display: inline-block;
-    width: 20px;
-    height: 13px;
-    margin: auto;
-    position:relative;
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
@@ -177,9 +237,9 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 15px;
-    width: 15px;
-    margin: -6px -6px 0 -6px;
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
 #fp-nav ul li a span,
@@ -187,31 +247,28 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 8px;
-    width: 8px;
+    height: 4px;
+    width: 4px;
     border: 0;
-    background: #dfb7ff;
-    right: 50%;
+    background: #333;
+    left: 50%;
     top: 50%;
-    margin: -2px -2px 0 -2px;
+    margin: -2px 0 0 -2px;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-.fp-slidesNav ul li a span{
-    background: #ffec6b;
-}
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 12px;
-    height: 12px;
-    margin: -6px -4px 0px -6px;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #333;
+    color: #fff;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -230,41 +287,20 @@ html.fp-enabled,
     opacity: 1;
 }
 #fp-nav ul li .fp-tooltip.fp-right {
-    right:20px;
+    right: 20px;
 }
 #fp-nav ul li .fp-tooltip.fp-left {
     left: 20px;
 }
 .fp-auto-height.fp-section,
-.fp-auto-height .fp-slide{
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
     height: auto !important;
 }
 
-/* Used with autoScrolling: false */ 
-.fp-scrollable .fp-section,
-.fp-scrollable .fp-slide{
-   /* Fallback for browsers that do not support Custom Properties */
-   height: 100vh;
-   height: calc(var(--vh, 1vh) * 100);
-}
-
-/* Disabling vertical centering on scrollable elements */
-.fp-overflow{
-    justify-content: flex-start;
-}
-
-.fp-overflow{
-    overflow-y: scroll;
-    height: 100%;
-    outline:none;
-}
-
-.fp-overflow.fp-table{
-    display: block;
-}
-
 .fp-responsive .fp-auto-height-responsive.fp-section,
-.fp-responsive .fp-auto-height-responsive .fp-slide{
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
 }
 
@@ -278,62 +314,4 @@ html.fp-enabled,
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-}
-
-.fp-snaps{
-    overflow-y: auto !important;
-    height: 100% !important;
-}
-.fp-snaps body{
-    height: 100% !important;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll !important;
-        scroll-behavior: smooth;
-}
-.fp-snaps .fp-section{
-    scroll-snap-align: start;
-}
-.fp-snaps .fullpage-wrapper{
-    height: auto !important;
-}
-
-/* Used for DragAndMove*/
-.fp-disable-snap body{
-    scroll-behavior: unset !important;
-    scroll-snap-type: none !important;
-}
-
-/* Customize website's scrollbar like Mac OS
-Not supports in Firefox and IE */
-.fp-scroll-mac .fp-overflow::-webkit-scrollbar {
-    background-color: transparent;
-    width: 9px;
-}
-.fp-scroll-mac .fp-overflow::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-.fp-scroll-mac .fp-overflow::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.4);
-    border-radius: 16px;
-    border: 4px solid transparent;
-}
-.fp-warning,
-.fp-watermark{
-    z-index: 9999999;
-    position: absolute;
-    bottom: 0;
-}
-.fp-warning,
-.fp-watermark a{
-    text-decoration: none;
-    color: #000;
-    background: rgba(255,255,255,0.6);
-    padding: 5px 8px;
-    font-size: 14px;
-    font-family: arial;
-    color: black;
-    display: inline-block;
-    border-radius: 3px;
-    margin: 12px;
 }

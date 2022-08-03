@@ -59,8 +59,8 @@ body{font-size: 1vw;}
     width: 40%;
     position: relative;
     left: 0;
-    animation: in 1s ease-in-out;
 }
+
 .left img{
     width: 70%;
     margin-left: 15%;
@@ -76,16 +76,15 @@ body{font-size: 1vw;}
     font-weight: 700;
     color: #b89dc0;
 }
-
-.left.in{
-    animation: in 1.5s ease-in-out;
+.profile .ani1{
+    animation: in .5s ease-in-out;
 }
-.left.out{
-    animation: out 1.5s ease-in-out;    
+.profile .ani2{
+    animation: out .5s ease-in-out;
 }
 @keyframes in{
     from{
-        left: -400px;
+        left: -500px;
         opacity: 0;
     }
     to{
@@ -99,7 +98,7 @@ body{font-size: 1vw;}
         opacity: 1;
     }
     to{
-        left: -400px;
+        left: -500px;
         opacity: 0;
     }
 }
@@ -367,6 +366,33 @@ body{font-size: 1vw;}
     border: 0;
     z-index: 6;
 }
+.profile .ani3{
+    animation: in2 .5s ease-in-out;
+}
+.profile .ani4{
+    animation: out2 .5s ease-in-out;
+}
+@keyframes in2{
+    from{
+        right: -500px;
+        opacity: 0;
+    }
+    to{
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes ou2t{
+    from{
+        right: 0;
+        opacity: 1;
+    }
+    to{
+        righ: -500px;
+        opacity: 0;
+    }
+}
+
 
 /* 6번째 페이지 */
 #foot{position: relative;}

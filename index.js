@@ -2,25 +2,37 @@ new fullpage(
     '#wrap', {
     anchors:['1page','2page','3page','4page','5page','6page'],
     menu: '.menu',
-    onLeave: function(origin, destination, direction){
-        if(origin.index==1 && destination.index==0){
-            $('.profile .left').hide(1000);
-        }else if(origin.index==0 && destination.index==1){
-            $('.profile .left').show(100);
-        }else if(origin.index==1 && destination.index==2){
-            $('.profile .left').hide(1000);
-        }else if(origin.index==2 && destination.index==1){
-            $('.profile .left').show(100);
-        }else if(origin.index==3 && destination.index==4){
+    onLeave: function(origin, destination, direction, trigger){
+        if(origin.index==0 && direction =='down'){
+            $('.profile .left').show();
+            $('.profile .left').addClass('ani1');
+        }else if(origin.index==2 && direction =='up'){
+            $('.profile .left').show();
+            $('.profile .left').addClass('ani1');
+        }else if(origin.index==1 && direction =='down'){
+            $('.profile .left').hide(500);
+            $('.profile .left').addClass('ani2');
+        }else if(origin.index==1 && direction =='up'){
+            $('.profile .left').hide(500);
+            $('.profile .left').addClass('ani2');
+        }else if(origin.index==3 && direction =='down'){
             $('#etc .main .image').show(500);
-        }else if(origin.index==4 && destination.index==5){
-            $('#etc .main .image').hide(1000);
-        }else if(origin.index==5 && destination.index==4){
+            $('#etc .main .image').addClass('ani3');
+        }else if(origin.index==5 && direction =='up'){
             $('#etc .main .image').show(500);
-        }else if(origin.index==4 && destination.index==3){
-            $('#etc .main .image').hide(1000);
-        }
-    },
+            $('#etc .main .image').addClass('ani4');
+        }else if(origin.index==4 && direction =='up'){
+            $('#etc .main .image').hide(500);
+            $('#etc .main .image').addClass('ani4');
+        }else if(origin.index==4 && direction =='down'){
+            $('#etc .main .image').hide(500);
+            $('#etc .main .image').addClass('ani4');
+        }},
+    afterLoad: function(origin, destination, direction, trigger){
+        if(origin.index == 1){
+            $('.profile .left').show();
+            console.log(1);
+        }},
     navigation:true
     }
 );
@@ -42,7 +54,7 @@ anime({
     loop:true
 })
 
-// 2page 
+// 2page
 anime({
     targets: '.skill .per',
     borderRadius:50
@@ -77,6 +89,7 @@ anime({
     easing: 'easeInOutQuad',
     duration:3000
 });
+
 
 
 // colorbox
