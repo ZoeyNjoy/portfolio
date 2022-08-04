@@ -247,6 +247,7 @@ body{font-size: 1vw;}
     margin-bottom: 1%;
 }
 #etc .main .image li a{
+    width: 100%;
     color: initial;
 }
 #etc .main .image li:hover{
@@ -254,7 +255,9 @@ body{font-size: 1vw;}
     transition: all .3s ease-in-out;
 }
 #etc .main .image li span{
-    font: 400 1.2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+    text-align: right;
+    font: 100 1em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+    display: block;
 }
 #etc .main .image li img{
     width: 100%;

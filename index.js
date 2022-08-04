@@ -70,7 +70,7 @@ anime({
 });
 anime({
     targets: '.skill .per2',
-    width: '50%',
+    width: '54%',
     easing: 'easeInOutQuad',
     duration:3000
 });
@@ -88,7 +88,7 @@ anime({
 });
 anime({
     targets: '.skill .per5',
-    width: '30%',
+    width: '25%',
     easing: 'easeInOutQuad',
     duration:3000
 });
