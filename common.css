@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
     z-index: 99;
 }
 .intro .logo{
-    width: 30%;
+    width: 25%;
     position: absolute;
     top: 50%;
     left: 50%;
