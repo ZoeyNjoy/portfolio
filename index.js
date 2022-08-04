@@ -40,9 +40,9 @@ new fullpage(
 
 
 
-$('.cau .box #close').on('click',function(){
-    $('.cau').hide();
-});
+// $('.intro .txt #close').on('click',function(){
+//     $('.intro').hide();
+// });
 
 
 // 1page
