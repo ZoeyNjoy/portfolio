@@ -59,12 +59,13 @@ body{font-size: 2vw;}
     width: 100%;
 }
 #sona .main a{
-    width: 20%;
-    top: 55%;
-    left: 70%;
+    width: 23%;
+    top: 42%;
+    left: 65%;
 }
 #sona .main .sub{
     top: 30%;
+    width: 80%;
 }
 
 /* 4페이지 */
