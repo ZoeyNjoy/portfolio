@@ -39,7 +39,7 @@ body{font-size:2vw;}
     width: 100%;
     margin-top: 3%;
     position: relative;
-    font: 400 1.2em/1.7em 'Noto Sans KR','Roboto', sans-serif;
+    font: 400 1.5em/1.7em 'Noto Sans KR','Roboto', sans-serif;
 }
 .about p:nth-child(3){
     position: unset;
@@ -73,14 +73,14 @@ body{font-size:2vw;}
 }
 #sona .main a{
     width: 35%;
-    top: 65%;
-    left: 10%;
-    font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
+    top: 42%;
+    left: 52%;
+    font: bold 1.8em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
 #sona .main .sub{
     top: 35%;
     width: 80%;
-    font: bold 1.8em/1.8em 'Noto Sans KR','Roboto', sans-serif;
+    font: bold 1.3em/1.8em 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* 4페이지 */
