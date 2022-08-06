@@ -83,8 +83,8 @@ body{font-size: 1.9vw;}
     justify-content: space-between;
 }
 #etc .main .image li{
-    width: 30%;
-    margin-bottom: 5%;
+    width: 49%;
+    margin-bottom: 2%;
 }
 #etc .main .image li a{
     color: initial;
