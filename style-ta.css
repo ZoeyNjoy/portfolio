@@ -71,10 +71,10 @@ body{font-size: 1.9vw;}
 /* 4페이지 */
 #etc .main .image{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
 }
 #etc .main .image ul{
     width: 100%;
@@ -83,7 +83,7 @@ body{font-size: 1.9vw;}
     justify-content: space-between;
 }
 #etc .main .image li{
-    width: 49%;
+    width: 48%;
     margin-bottom: 2%;
 }
 #etc .main .image li a{
