@@ -215,8 +215,64 @@ body{font-size: 1vw;}
 }
 
 
+/* 4번째 페이지 */
+#twosome{
+    position: relative;
+}
+#twosome .main{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+#twosome .main img{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+#twosome .main a{
+    width: 12%;
+    position: absolute;
+    top: 55%;
+    left: 26%;
+    display: block;
+    font: bold 1.2em/1.2em 'Noto Sans KR','Roboto', sans-serif;
+    color: inherit;
+}
+#twosome .main a img{
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+#twosome .main a:hover{
+    transform: translateX(20px);
+    transition: all .3s ease-in-out;
+}
+#twosome .main .sub{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    transform: translateY(-50%);
+    width: 35%;
+}
+#twosome .main .sub p{
+    font: bold 1.5em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+}
+#twosome .main .sub p:nth-child(1){
+    font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
+}
+#twosome .main .sub p:nth-child(1) span{
+    font-size: 0.7em;
+}
 
-/* 4페이지 */
+
+/* 5페이지 */
 #etc{
     position: relative;
 }
