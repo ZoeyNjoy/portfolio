@@ -129,5 +129,3 @@ $(document).on('keyup',function(evt) {
 $('#etc .main .popup').on('scroll', function(){
     $('body').addClass('stop')
 });
-
-
