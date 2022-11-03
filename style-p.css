@@ -68,38 +68,25 @@ body{font-size:2vw;}
 }
 
 /* 3번쩨 페이지 */
-#sona .main img{
+#web .slide{
     width: 100%;
 }
-#sona .main a{
-    width: 35%;
-    top: 42%;
-    left: 52%;
+.slide .main img{
+    width: 100%;
+}
+.slide .main a{
+    width: 50%;
+    top: 60%;
+    left: 30%;
     font: bold 1.8em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
-#sona .main .sub{
+.slide .main .sub{
     top: 35%;
     width: 80%;
     font: bold 1.3em/1.8em 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* 4번쩨 페이지 */
-#twosome .main img{
-    width: 100%;
-}
-#twosome .main a{
-    width: 35%;
-    top: 42%;
-    left: 52%;
-    font: bold 1.8em/2em 'Noto Sans KR','Roboto', sans-serif;
-}
-#twosome .main .sub{
-    top: 35%;
-    width: 80%;
-    font: bold 1.3em/1.8em 'Noto Sans KR','Roboto', sans-serif;
-}
-
-/* 5페이지 */
 #etc .main .image{
     position: absolute;
     top: 50%;

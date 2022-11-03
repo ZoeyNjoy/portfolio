@@ -1,6 +1,6 @@
 new fullpage(
     '#wrap', {
-    anchors:['1page','2page','3page','4page','5page','6page'],
+    anchors:['1page','2page','3page','4page','5page'],
     menu: '.menu',
     onLeave: function(origin, destination, direction, trigger){
         if(origin.index==0 && direction =='down'){
@@ -16,13 +16,13 @@ new fullpage(
         }else if(origin.index==2 && direction =='down'){
             $('#etc .main .image').show(500);
             $('#etc .main .image').addClass('ani3');
-        }else if(origin.index==5 && direction =='up'){
+        }else if(origin.index==4 && direction =='up'){
             $('#etc .main .image').show(500);
             $('#etc .main .image').addClass('ani4');
-        }else if(origin.index==4 && direction =='up'){
+        }else if(origin.index==3 && direction =='up'){
             $('#etc .main .image').hide(500);
             $('#etc .main .image').addClass('ani4');
-        }else if(origin.index==4 && direction =='down'){
+        }else if(origin.index==3 && direction =='down'){
             $('#etc .main .image').hide(500);
             $('#etc .main .image').addClass('ani4');
         }},

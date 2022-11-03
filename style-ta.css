@@ -55,34 +55,20 @@ body{font-size: 1.9vw;}
 
 
 /* 3번쩨 페이지 */
-#sona .main img{
+.slide .main img{
     width: 100%;
 }
-#sona .main a{
+.slide .main a{
     width: 23%;
     top: 42%;
     left: 65%;
 }
-#sona .main .sub{
+.slide .main .sub{
     top: 30%;
     width: 80%;
 }
 
 /* 4번쩨 페이지 */
-#twosome .main img{
-    width: 100%;
-}
-#twosome .main a{
-    width: 23%;
-    top: 42%;
-    left: 65%;
-}
-#twosome .main .sub{
-    top: 30%;
-    width: 80%;
-}
-
-/* 5페이지 */
 #etc .main .image{
     position: absolute;
     top: 50%;
