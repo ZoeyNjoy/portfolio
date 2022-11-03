@@ -159,10 +159,14 @@ body{font-size: 1vw;}
 
 
 /* 3번째 페이지 */
-#sona{
+#web{
+    width: 100%;
+}
+#web .slide{
+    width: 100%;
     position: relative;
 }
-#sona .main{
+.slide .main{
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -171,13 +175,13 @@ body{font-size: 1vw;}
     height: 100%;
     z-index: 3;
 }
-#sona .main img{
+.slide .main img{
     width: 60%;
     position: absolute;
     bottom: 0;
     right:0;
 }
-#sona .main a{
+.slide .main a{
     width: 12%;
     position: absolute;
     top: 55%;
@@ -186,40 +190,37 @@ body{font-size: 1vw;}
     font: bold 1.2em/1.2em 'Noto Sans KR','Roboto', sans-serif;
     color: inherit;
 }
-#sona .main a img{
+.slide .main a img{
     width: 20%;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
 }
-#sona .main a:hover{
+.slide .main a:hover{
     transform: translateX(20px);
     transition: all .3s ease-in-out;
 }
-#sona .main .sub{
+.slide .main .sub{
     position: absolute;
     top: 40%;
     left:10%;
     transform: translateY(-50%);
     width: 35%;
 }
-#sona .main .sub p{
+.slide .main .sub p{
     font: bold 1.5em/1.5em 'Noto Sans KR','Roboto', sans-serif;
 }
-#sona .main .sub p:nth-child(1){
+.slide .main .sub p:nth-child(1){
     font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
-#sona .main .sub p:nth-child(1) span{
+.slide .main .sub p:nth-child(1) span{
     font-size: 0.7em;
 }
-
-
-/* 4번째 페이지 */
-#twosome{
-    position: relative;
+.slide .main .sub p:nth-child(3){
+    font: bold 1.2em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
-#twosome .main{
+/* #web .main{
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -228,13 +229,13 @@ body{font-size: 1vw;}
     height: 100%;
     z-index: 3;
 }
-#twosome .main img{
+#web .main img{
     width: 60%;
     position: absolute;
     bottom: 0;
     right:0;
 }
-#twosome .main a{
+#web .main a{
     width: 12%;
     position: absolute;
     top: 55%;
@@ -243,33 +244,34 @@ body{font-size: 1vw;}
     font: bold 1.2em/1.2em 'Noto Sans KR','Roboto', sans-serif;
     color: inherit;
 }
-#twosome .main a img{
+#web .main a img{
     width: 20%;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
 }
-#twosome .main a:hover{
+#web .main a:hover{
     transform: translateX(20px);
     transition: all .3s ease-in-out;
 }
-#twosome .main .sub{
+#web .main .sub{
     position: absolute;
     top: 40%;
     left:10%;
     transform: translateY(-50%);
     width: 35%;
 }
-#twosome .main .sub p{
+#web .main .sub p{
     font: bold 1.5em/1.5em 'Noto Sans KR','Roboto', sans-serif;
 }
-#twosome .main .sub p:nth-child(1){
+#web .main .sub p:nth-child(1){
     font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
-#twosome .main .sub p:nth-child(1) span{
+#web .main .sub p:nth-child(1) span{
     font-size: 0.7em;
-}
+} */
+
 
 
 /* 5페이지 */
