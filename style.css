@@ -220,128 +220,69 @@ body{font-size: 1vw;}
 .slide .main .sub p:nth-child(3){
     font: bold 1.2em/2em 'Noto Sans KR','Roboto', sans-serif;
 }
-/* #web .main{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-#web .main img{
-    width: 60%;
-    position: absolute;
-    bottom: 0;
-    right:0;
-}
-#web .main a{
-    width: 12%;
-    position: absolute;
-    top: 55%;
-    left: 26%;
-    display: block;
-    font: bold 1.2em/1.2em 'Noto Sans KR','Roboto', sans-serif;
-    color: inherit;
-}
-#web .main a img{
-    width: 20%;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-#web .main a:hover{
-    transform: translateX(20px);
-    transition: all .3s ease-in-out;
-}
-#web .main .sub{
-    position: absolute;
-    top: 40%;
-    left:10%;
-    transform: translateY(-50%);
-    width: 35%;
-}
-#web .main .sub p{
-    font: bold 1.5em/1.5em 'Noto Sans KR','Roboto', sans-serif;
-}
-#web .main .sub p:nth-child(1){
-    font: bold 2em/2em 'Noto Sans KR','Roboto', sans-serif;
-}
-#web .main .sub p:nth-child(1) span{
-    font-size: 0.7em;
-} */
-
-
 
 /* 5페이지 */
 #etc{
-    position: relative;
-}
-#etc .main{
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
-    height: 100%;
-    z-index: 3;
 }
-#etc .main .image{
+#etc .slide{
+    position: relative;
+    width: 100%;
+}
+#etc .slide .slides{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-}
-#etc .main .image ul{
     width: 100%;
+    height: 90%;
+    z-index: 3;
+}
+#etc .slides h1{
+    padding: 40px 150px;
+    box-sizing: border-box;
+}
+#etc .slides ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:85%;
+    height: 80%;
+    float: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#etc .main .image li{
-    width: 24%;
-    margin-bottom: 1%;
+#etc .slides li{
+    width: 32%;
+    margin-bottom: 50px;
+    position: relative;
 }
-#etc .main .image li a{
+#etc .slides li a{
     width: 100%;
     color: initial;
 }
-#etc .main .image li:hover{
-    transform: scale(1.1);
-    transition: all .3s ease-in-out;
-}
-#etc .main .image li span{
-    text-align: right;
-    font: 100 1em/1.5em 'Noto Sans KR','Roboto', sans-serif;
-    display: block;
-}
-#etc .main .image li img{
-    width: 100%;
-    border: 2px solid #ccc;
-}
-#etc .main .sub{
+#etc .slides li:hover a{
     position: absolute;
-    top: 40%;
-    left:10%;
-    transform: translateY(-50%);
-    width: 15%;
+    /* top: -5px;
+    left: -5px; */
+    transform: translate(50px 50px);
+    transition: all 1s ease-in-out;
 }
-#etc .main .sub p{
-    font: bold 2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
+#etc .slide li a img{
+    width: 100%;
+    border: 1px solid #aaa;
+    box-shadow: 10px 5px 10px #999;
+    margin-bottom: 10px;
 }
-#etc .main .sub p:nth-child(2){
-    display: flex;
-}
-
-#etc .main .popup{
-    position: relative;
+.slides .popup{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
     background-color: #fff;
     z-index: 5;
     display: none;
@@ -355,13 +296,13 @@ body{font-size: 1vw;}
     background-clip: padding-box;
     border: 3px solid transparent;
 }
-.main .popup .popimg{
+.slide .popup .popimg{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.main .popup .close{
+.slide .popup .close{
     position: sticky;
     top: 20px;
     left: 20px;
@@ -372,7 +313,7 @@ body{font-size: 1vw;}
     border: 1px solid #333;
     background-color: #e04a3b;
 }
-.main .popup .close:hover{
+.slide .popup .close:hover{
     background-color: #ccc;
     
 }
@@ -401,11 +342,13 @@ body{font-size: 1vw;}
         righ: -500px;
         opacity: 0;
     }
-}
+} 
 
 
 /* 6번째 페이지 */
-#foot{position: relative;}
+#foot{
+    position: relative;
+}
 #foot .f_txt{
     position: absolute;
     top: 45%;

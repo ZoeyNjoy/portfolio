@@ -95,37 +95,37 @@ anime({
 
 
 // 5번재 페이지 팝업
-$('#etc .main .image ul li a').on('click',function(e){
+$('#etc .slides ul li a').on('click',function(e){
     e.preventDefault();
     var href = $(this).attr('href');
 
-    $('#etc .main .popup img').attr('src', href);
-    $('#etc .main .popup').show(500);
-    $('#etc .main').css('background-color', 'rgba(0, 0, 0, 0.7)');
-    $('#etc .main .image').css({
+    $('#etc .slides .popup img').attr('src', href);
+    $('#etc .slides .popup').show(500);
+    $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0.7)');
+    $('#etc .slides .image').css({
         opacity: '0.8',
         filter: 'blur(1px)'
     });    
 });
-$('#etc .main .popup .close').on('click',function(){
-    $('#etc .main .popup').hide(500);
-    $('#etc .main').css('background-color', 'rgba(0, 0, 0, 0)');
-    $('#etc .main .image').css({
+$('#etc .slides .popup .close').on('click',function(){
+    $('#etc .slides .popup').hide(500);
+    $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0)');
+    $('#etc .slides .image').css({
         opacity: '1',
         filter: 'blur(0)'
     });
 });
 $(document).on('keyup',function(evt) {
     if (evt.keyCode == 27) {
-        $('#etc .main .popup').hide(500);
-        $('#etc .main').css('background-color', 'rgba(0, 0, 0, 0)');
-        $('#etc .main .image').css({
+        $('#etc .slides .popup').hide(500);
+        $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0)');
+        $('#etc .slides .image').css({
         opacity: '1',
         filter: 'blur(0)'
     });
     }
 });
 
-$('#etc .main .popup').on('scroll', function(){
+$('#etc .slides .popup').on('scroll', function(){
     $('body').addClass('stop')
 });
