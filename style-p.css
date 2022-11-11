@@ -87,40 +87,28 @@ body{font-size:2vw;}
 }
 
 /* 4번쩨 페이지 */
-#etc .main .image{
+#etc .slides h1{
     position: absolute;
-    top: 50%;
+    top: 15px;
     left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+#etc .slides ul{
+    position: absolute;
+    top: 53%;
+    left: 46%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width:60%;
+    height: 95%;
 }
-#etc .main .image li{
-    width: 45%;
-    margin-bottom: 5%;
-}
-#etc .main .image li span{
-    font: 400 2em/1.5em 'Noto Sans KR','Roboto', sans-serif;
-}
-#etc .main .sub{
-    top: 7%;
-    width: 90%;
-}
-#etc .main .sub p{
-    font: bold 2.5em/1.3em 'Noto Sans KR','Roboto', sans-serif;
-    display: flex;
-}
-#etc .main .sub p:nth-child(2){
-    display: none;
-}
-
-#etc .main .popup{
+#etc .slides li{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 85%;
-    height: 90%;
-    display: none;
-}
-#etc .main .popup img{
-    width: 100%;
-    height: auto;
+    margin-bottom: 5px;
+    position: relative;
 }
 
 /* 5번째 페이지 */
