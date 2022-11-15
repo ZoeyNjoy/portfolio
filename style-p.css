@@ -111,8 +111,7 @@ body{font-size:2vw;}
     position: relative;
 }
 .slide .popup p{
-    top: 30px;
-    left: 60px;
+    display: none;
 }
 
 
