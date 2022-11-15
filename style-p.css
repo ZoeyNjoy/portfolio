@@ -110,6 +110,11 @@ body{font-size:2vw;}
     margin-bottom: 5px;
     position: relative;
 }
+.slide .popup p{
+    top: 30px;
+    left: 60px;
+}
+
 
 /* 5번째 페이지 */
 #foot{position: relative;}
