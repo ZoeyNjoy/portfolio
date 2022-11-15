@@ -90,8 +90,7 @@ body{font-size: 1.9vw;}
     margin-bottom: 10px;
 }
 .slide .popup p{
-    top: 30px;
-    left: 60px;
+    display: none;
 }
 
 /* 5페이지 */
