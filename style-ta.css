@@ -89,6 +89,10 @@ body{font-size: 1.9vw;}
     width: 48%;
     margin-bottom: 10px;
 }
+.slide .popup p{
+    top: 30px;
+    left: 60px;
+}
 
 /* 5페이지 */
 #foot .copy{
