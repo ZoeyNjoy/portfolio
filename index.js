@@ -5,34 +5,26 @@ new fullpage(
     onLeave: function(origin, destination, direction, trigger){
         if(origin.index==0 && direction =='down'){
             $('.profile .left').show(1000);
-            $('.profile .left').addClass('ani1');
         }else if(origin.index==2 && direction =='up'){
             $('.profile .left').show(1000);
-            $('.profile .left').addClass('ani1');
         }else if(origin.index==1 && direction =='down'){
             $('.profile .left').hide(500);
         }else if(origin.index==1 && direction =='up'){
             $('.profile .left').hide(500);
         }else if(origin.index==2 && direction =='down'){
             $('#etc .main .image').show(500);
-            $('#etc .main .image').addClass('ani3');
         }else if(origin.index==4 && direction =='up'){
             $('#etc .main .image').show(500);
-            $('#etc .main .image').addClass('ani4');
         }else if(origin.index==3 && direction =='up'){
             $('#etc .main .image').hide(500);
-            $('#etc .main .image').addClass('ani4');
         }else if(origin.index==3 && direction =='down'){
             $('#etc .main .image').hide(500);
-            $('#etc .main .image').addClass('ani4');
         }},
     afterLoad: function(origin, destination, direction, trigger){
         if(origin.index == 1){
             $('.profile .left').show(1000);
-            $('.profile .left').addClass('ani1');
         }else if(origin.index==4){
             $('#etc .main .image').show(500);
-            $('#etc .main .image').addClass('ani3');
         }},
     navigation:true
     }
@@ -95,7 +87,7 @@ anime({
 
 
 // 5번재 페이지 팝업
-$('#etc .slides ul li a').on('click',function(e){
+/* $('#etc .slides ul li a').on('click',function(e){
     e.preventDefault();
     var href = $(this).attr('href');
 
@@ -124,8 +116,20 @@ $(document).on('keyup',function(evt) {
         filter: 'blur(0)'
     });
     }
-});
+});*/
 
-$('#etc .slides .popup').on('scroll', function(){
-    $('body').addClass('stop')
+// $('#etc .slides .popup').on('scroll', function(){
+//     $('body').addClass('stop')
+// });
+
+
+
+$(".group").colorbox({
+    rel:'group',
+    width:"90%",
+    // innerWidth:"100%",
+    height:"90%",
+    // innerHeight:"100%",
+    closeButton: true,
+    scrolling:true
 });

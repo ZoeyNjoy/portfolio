@@ -76,19 +76,6 @@ body{font-size: 1vw;}
     font-weight: 700;
     color: #b89dc0;
 }
-.profile .ani1{
-    animation: in .5s ease-in-out;
-}
-@keyframes in{
-    from{
-        left: -500px;
-        opacity: 0;
-    }
-    to{
-        left: 0;
-        opacity: 1;
-    }
-}
 .profile .right{
     width: 60%;
     font: 400 .9em/2em 'Noto Sans KR','Roboto', sans-serif;
@@ -259,95 +246,24 @@ body{font-size: 1vw;}
     margin-bottom: 20px;
     position: relative;
 }
-#etc .slides li a{
+#etc .slides li .group{
     width: 100%;
+    object-fit: cover;
     color: initial;
 }
-#etc .slides li:hover a{
+#etc .slides li:hover .group{
     opacity: 0.8;
     transition: all .3s ease-in-out;
 }
-#etc .slide li a img{
+#etc .slide li .group img{
     width: 100%;
+    object-fit: cover;
     border: 1px solid #aaa;
     box-shadow: 10px 5px 10px #999;
     margin-bottom: 10px;
 }
-.slides .popup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 90%;
-    background-color: #fff;
-    z-index: 5;
-    display: none;
-    overflow-y: scroll;
-}
-.popup::-webkit-scrollbar{
-    width: 15px;
-}
-.popup::-webkit-scrollbar-thumb {
-    background-color: #ffec6b;
-    background-clip: padding-box;
-    border: 3px solid transparent;
-}
-.slide .popup .popimg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.slide .popup .close{
-    position: sticky;
-    top: 20px;
-    left: 20px;
-    width: 30px;
-    height: 30px;
-    z-index: 10;
-    border-radius: 50%;
-    border: 1px solid #333;
-    background-color: #e04a3b;
-}
-.slide .popup .close:hover{
-    background-color: #ccc;   
-}
-.slide .popup p{
-    position: absolute;
-    top: 60px;
-    left: 20px;
-    width: 300px;
-    height: 30px;
-    z-index: 10;
-    color: #000;
-}
-.profile .ani3{
-    animation: in2 .5s ease-in-out;
-}
-.profile .ani4{
-    animation: out2 .5s ease-in-out;
-}
-@keyframes in2{
-    from{
-        right: -500px;
-        opacity: 0;
-    }
-    to{
-        right: 0;
-        opacity: 1;
-    }
-}
-@keyframes out2{
-    from{
-        right: 0;
-        opacity: 1;
-    }
-    to{
-        righ: -500px;
-        opacity: 0;
-    }
-} 
+
+
 
 
 /* 6번째 페이지 */
