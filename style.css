@@ -76,6 +76,19 @@ body{font-size: 1vw;}
     font-weight: 700;
     color: #b89dc0;
 }
+.profile .ani1{
+    animation: in .5s ease-in-out;
+}
+@keyframes in{
+    from{
+        left: -500px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+}
 .profile .right{
     width: 60%;
     font: 400 .9em/2em 'Noto Sans KR','Roboto', sans-serif;
@@ -246,24 +259,46 @@ body{font-size: 1vw;}
     margin-bottom: 20px;
     position: relative;
 }
-#etc .slides li .group{
+#etc .slides li a{
     width: 100%;
-    object-fit: cover;
     color: initial;
 }
-#etc .slides li:hover .group{
+#etc .slides li:hover a{
     opacity: 0.8;
     transition: all .3s ease-in-out;
 }
-#etc .slide li .group img{
+#etc .slide li a img{
     width: 100%;
-    object-fit: cover;
     border: 1px solid #aaa;
     box-shadow: 10px 5px 10px #999;
     margin-bottom: 10px;
 }
-
-
+.profile .ani3{
+    animation: in2 .5s ease-in-out;
+}
+.profile .ani4{
+    animation: out2 .5s ease-in-out;
+}
+@keyframes in2{
+    from{
+        right: -500px;
+        opacity: 0;
+    }
+    to{
+        right: 0;
+        opacity: 1;
+    }
+}
+@keyframes out2{
+    from{
+        right: 0;
+        opacity: 1;
+    }
+    to{
+        righ: -500px;
+        opacity: 0;
+    }
+} 
 
 
 /* 6번째 페이지 */

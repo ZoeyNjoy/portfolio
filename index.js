@@ -5,26 +5,34 @@ new fullpage(
     onLeave: function(origin, destination, direction, trigger){
         if(origin.index==0 && direction =='down'){
             $('.profile .left').show(1000);
+            $('.profile .left').addClass('ani1');
         }else if(origin.index==2 && direction =='up'){
             $('.profile .left').show(1000);
+            $('.profile .left').addClass('ani1');
         }else if(origin.index==1 && direction =='down'){
             $('.profile .left').hide(500);
         }else if(origin.index==1 && direction =='up'){
             $('.profile .left').hide(500);
         }else if(origin.index==2 && direction =='down'){
             $('#etc .main .image').show(500);
+            $('#etc .main .image').addClass('ani3');
         }else if(origin.index==4 && direction =='up'){
             $('#etc .main .image').show(500);
+            $('#etc .main .image').addClass('ani4');
         }else if(origin.index==3 && direction =='up'){
             $('#etc .main .image').hide(500);
+            $('#etc .main .image').addClass('ani4');
         }else if(origin.index==3 && direction =='down'){
             $('#etc .main .image').hide(500);
+            $('#etc .main .image').addClass('ani4');
         }},
     afterLoad: function(origin, destination, direction, trigger){
         if(origin.index == 1){
             $('.profile .left').show(1000);
+            $('.profile .left').addClass('ani1');
         }else if(origin.index==4){
             $('#etc .main .image').show(500);
+            $('#etc .main .image').addClass('ani3');
         }},
     navigation:true
     }
@@ -87,49 +95,16 @@ anime({
 
 
 // 5번재 페이지 팝업
-/* $('#etc .slides ul li a').on('click',function(e){
-    e.preventDefault();
-    var href = $(this).attr('href');
-
-    $('#etc .slides .popup img').attr('src', href);
-    $('#etc .slides .popup').show(500);
-    $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0.7)');
-    $('#etc .slides .image').css({
-        opacity: '0.8',
-        filter: 'blur(1px)'
-    });    
-});
-$('#etc .slides .popup .close').on('click',function(){
-    $('#etc .slides .popup').hide(500);
-    $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0)');
-    $('#etc .slides .image').css({
-        opacity: '1',
-        filter: 'blur(0)'
-    });
-});
-$(document).on('keyup',function(evt) {
-    if (evt.keyCode == 27) {
-        $('#etc .slides .popup').hide(500);
-        $('#etc .slide').css('background-color', 'rgba(0, 0, 0, 0)');
-        $('#etc .slides .image').css({
-        opacity: '1',
-        filter: 'blur(0)'
-    });
+$('.popup').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    mainClass: 'mfp-no-margins mfp-with-zoom',
+    image: {
+        verticalFit: true
+    },
+    zoom: {
+        enabled: true,
+        duration: 300
     }
-});*/
-
-// $('#etc .slides .popup').on('scroll', function(){
-//     $('body').addClass('stop')
-// });
-
-
-
-$(".group").colorbox({
-    rel:'group',
-    width:"90%",
-    // innerWidth:"100%",
-    height:"90%",
-    // innerHeight:"100%",
-    closeButton: true,
-    scrolling:true
 });
