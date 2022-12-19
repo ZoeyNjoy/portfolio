@@ -70,12 +70,12 @@ body{font-size: 1.9vw;}
 
 /* 4번쩨 페이지 */
 #etc .slides h1{
-    padding: 100px 100px;
+    padding: 50px 50px;
     box-sizing: border-box;
 }
 #etc .slides ul{
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     width:85%;
@@ -89,7 +89,6 @@ body{font-size: 1.9vw;}
     width: 48%;
     margin-bottom: 10px;
 }
-
 /* 5페이지 */
 #foot .copy{
     width: 70%;

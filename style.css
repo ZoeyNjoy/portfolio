@@ -273,6 +273,21 @@ body{font-size: 1vw;}
     box-shadow: 10px 5px 10px #999;
     margin-bottom: 10px;
 }
+#etc .slide li a p{
+    font-size: 1rem;
+    line-height: 30px;
+}
+#etc .slide li a .tool{
+    width: 100%;
+    display: flex;
+}
+#etc .slide li a .tool img{
+    width: 25px;
+    margin-left: 6px;
+    box-shadow: none;
+    margin-bottom: 0;
+    border: none;
+}
 .profile .ani3{
     animation: in2 .5s ease-in-out;
 }
