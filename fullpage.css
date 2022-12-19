@@ -148,21 +148,21 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    width: 5%;
+    width: 10%;
     height: 100%;
     background: #ffffff00;
     border-color: transparent;
 }
 .fp-controlArrow.fp-next {
     right: 0;
-    width: 5%;
+    width: 10%;
     height: 100%;
     background: #ffffff00;
     border-color: transparent;
 }
 .fp-controlArrow.fp-prev:hover,
 .fp-controlArrow.fp-next:hover {
-    background: #00000029;
+    background: #0000000b;
 }
 .fp-scrollable {
     overflow: hidden;
