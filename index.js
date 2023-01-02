@@ -34,7 +34,8 @@ new fullpage(
             $('#etc .main .image').show(500);
             $('#etc .main .image').addClass('ani3');
         }},
-    navigation:true
+    navigation:true,
+    slidesNavigation: true
     }
 );
 
