@@ -110,7 +110,7 @@ $('.popup').magnificPopup({
 	type: 'image',
 	closeOnContentClick: true,
 	closeBtnInside: true,
-	mainClass: 'mfp-img-mobile',
+	mainClass: 'mfp-with-zoom mfp-img-mobile',
 	image: {
 		verticalFit: true,
 	},
