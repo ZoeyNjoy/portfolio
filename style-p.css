@@ -110,7 +110,10 @@ body{font-size:2vw;}
     margin-bottom: 5px;
     position: relative;
 }
-
+#etc .slides li a p,
+#etc .slides li a .tool{
+    display: none;
+}
 
 /* 5번째 페이지 */
 #foot{position: relative;}
