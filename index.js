@@ -107,10 +107,10 @@ anime({
 }); */
 
 $('.popup').magnificPopup({
-	type: 'iframe',
+	type: 'image',
 	closeOnContentClick: true,
 	closeBtnInside: true,
-	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	mainClass: 'mfp-img-mobile',
 	image: {
 		verticalFit: true,
 	},

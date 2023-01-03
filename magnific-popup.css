@@ -255,7 +255,7 @@ img.mfp-img {
   display: block;
   line-height: 0;
   box-sizing: border-box;
-  padding: 40px 0 40px;
+  padding: 20px 0 20px;
   margin: 0 auto;
   overflow: scroll;
 }
@@ -276,7 +276,8 @@ img.mfp-img {
     height: auto;
     z-index: -1;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #444; }
+    background: #444; 
+  }
   .mfp-figure small {
     color: #BDBDBD;
     display: block;
@@ -301,7 +302,8 @@ img.mfp-img {
   padding-right: 36px; }
 
 .mfp-image-holder .mfp-content {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
