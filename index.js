@@ -41,10 +41,6 @@ new fullpage(
 
 
 
-// $('.intro .txt #close').on('click',function(){
-//     $('.intro').hide();
-// });
-
 
 // 1page
 anime({
@@ -96,10 +92,10 @@ anime({
 
 
 // 5번재 페이지 팝업
-$('.popup').magnificPopup({
+/* $('.popup').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
-    closeBtnInside: false,
+    closeBtnInside: true,
     mainClass: 'mfp-no-margins mfp-with-zoom',
     image: {
         verticalFit: true
@@ -108,4 +104,25 @@ $('.popup').magnificPopup({
         enabled: true,
         duration: 300
     }
+}); */
+
+$('.popup').magnificPopup({
+	type: 'iframe',
+	closeOnContentClick: true,
+	closeBtnInside: true,
+	mainClass: 'mfp-with-zoom mfp-img-mobile',
+	image: {
+		verticalFit: true,
+	},
+	gallery: {
+		enabled: true,
+		navigateByImgClick: true,
+		preload: [0,1],
+    },
+	zoom: {
+		enabled: true,
+		duration: 300,
+        easing: 'ease-in-out',
+	}
 });
+

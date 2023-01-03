@@ -66,13 +66,12 @@ body::-webkit-scrollbar{
 
 /* 풀스크린 */
 #wrap .section:nth-of-type(1),
-#wrap .section:nth-of-type(6){
+#wrap .section:nth-of-type(5){
     background: url(./image/bg1-2.svg) center/cover;
 }
 #wrap .section:nth-of-type(2),
 #wrap .section:nth-of-type(3),
-#wrap .section:nth-of-type(4),
-#wrap .section:nth-of-type(5){
+#wrap .section:nth-of-type(4){
     background: url(./image/bg2-2.svg) center/cover;
 }
 
