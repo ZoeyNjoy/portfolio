@@ -1,4 +1,4 @@
-body{font-size:2vw;}
+body{font-size:1.5vw;}
 
 /* 메뉴바 */
 .menu{
@@ -10,7 +10,9 @@ body{font-size:2vw;}
     left: 50%;
     transform: translateX(-50%);
 }
-
+.menu li a{
+    font: bold 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
 #home .bg .txt p{
     text-align: center;
     font: bold 4rem/2rem 'PPGrafier-BlackDisplay';
@@ -39,14 +41,14 @@ body{font-size:2vw;}
 .left p{
     width: 50%;
     margin-left: 0;
-    margin-top: 100px;
-    font: 400 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    margin-top: 70px;
+    font: 400 .8rem/1.2rem 'Noto Sans KR','Roboto', sans-serif;
 }
 .profile .right{
     width: 100%;
     margin-top: 3%;
     position: relative;
-    font: 400 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    font: 400 .9rem/1.5rem 'Noto Sans KR','Roboto', sans-serif;
 }
 .about p:nth-child(3){
     position: unset;
