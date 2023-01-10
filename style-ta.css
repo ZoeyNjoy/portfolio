@@ -16,12 +16,12 @@ body{font-size: 1.9vw;}
 .profile .left{
     width: 50%;
 }
-.left img{
+.left .profileimg{
     width: 80%;
     margin-left: 8%;
 }
 .left p{
-    margin-top: 5%;
+    margin-top: 10px;
     margin-left: 8%;
 }
 

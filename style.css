@@ -61,9 +61,13 @@ body{font-size: 1vw;}
     left: 0;
 }
 
-.left img{
+.left .profileimg{
     width: 70%;
     margin-left: 15%;
+}
+.profileimg img{
+    width: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 .left p{
