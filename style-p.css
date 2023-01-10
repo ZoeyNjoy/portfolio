@@ -34,7 +34,6 @@ body{font-size:1.5vw;}
 .profile .left{
     width: 100%;
     display: flex;
-    border: 1px solid red;
 }
 .left .profileimg{
     display: none;
@@ -109,20 +108,36 @@ body{font-size:1.5vw;}
     top: 35%;
     width: 80%;
 }
+.slide .main .sub p:nth-child(1){
+    font: 900 1.5rem/3rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.slide .main .sub p:nth-child(1) span{
+    font-size: .9rem;
+    margin-left: 10px;
+}
+.slide .main .sub p:nth-child(2){
+    font: 500 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+}
+.slide .main .sub p:nth-child(3){
+    font: 300 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    color:#777;
+}
 .slide .main a{
     width: 200px;
     top: 60%;
     left: 40%;
-    font: 800 1.2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    font: 800 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* 4번쩨 페이지 */
+#etc .slide .slides{
+    top: 0;
+    transform: translate(-50%, 0%);
+    height: 85%;
+    border: 1px solid red;
+}
 #etc .slides h1{
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0;
+    display: none;
 }
 #etc .slides ul{
     position: absolute;
