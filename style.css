@@ -124,6 +124,7 @@ body{font-size: 1vw;}
 .profile h2{
     width: 100%;
     margin-bottom: 2%;
+    font: 900 2rem/2rem 'Noto Sans KR','Roboto', sans-serif;
 }
 .edu li,
 .work li{
@@ -157,7 +158,7 @@ body{font-size: 1vw;}
 .skill .per{
     height: 15px;
     margin-top:2%;
-    margin-left: 10%;
+    margin-left: 0px;
     background-color: #e7d9f0;
 }
 

@@ -30,19 +30,21 @@ body{font-size:1.5vw;}
 }
 .left .profileimg{
     width: 150px;
-    height: 150px;
+    height: 100px;
     margin-left: 40px;
 }
 .profileimg img{
     width: 100%;
     height: 100%;
+    border-radius: 0;
     object-fit: cover;
+    object-position: 50% 30%;
 }
 .left p{
     width: 50%;
     margin-left: 0;
     margin-top: 70px;
-    font: 400 .8rem/1.2rem 'Noto Sans KR','Roboto', sans-serif;
+    font: 400 1rem/1.2rem 'Noto Sans KR','Roboto', sans-serif;
 }
 .profile .right{
     width: 100%;
@@ -64,7 +66,7 @@ body{font-size:1.5vw;}
 .edu span,
 .work span{
     margin-left: 1%;
-    width: 26%;
+    width: 90px;
     font-weight: 600;
 }
 .skill li{
@@ -73,7 +75,10 @@ body{font-size:1.5vw;}
     border-left: 2px solid #333;
 }
 .skill p:nth-child(1){
-    width: 19%;
+    width: 90px;
+}
+.profile h2{
+    font: 900 1.2rem/1rem 'Noto Sans KR','Roboto', sans-serif;
 }
 
 /* 3번쩨 페이지 */
