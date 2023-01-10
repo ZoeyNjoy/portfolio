@@ -2,7 +2,7 @@ body{font-size:1.5vw;}
 
 /* 메뉴바 */
 .menu{
-    width: 90%;
+    width: 100%;
     right: 0%;
 }
 .menu ul{
@@ -16,7 +16,10 @@ body{font-size:1.5vw;}
 }
 .menu li a{
     font: bold 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
+    letter-spacing: 0px;
 }
+
+/* 첫페이지 */
 #home .bg .txt p{
     text-align: center;
     font: bold 4rem/2rem 'PPGrafier-BlackDisplay';
@@ -25,7 +28,8 @@ body{font-size:1.5vw;}
     
 /* #about 2page */
 #about .profile{
-    margin-top: 30px;
+    width: 95%;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 .profile .left{
@@ -58,7 +62,6 @@ body{font-size:1.5vw;}
 }
 .about, .edu, .work,.skill{
     margin-top: 0;
-    border: 1px solid red;
 }
 .about,
 .edu,
@@ -90,7 +93,7 @@ body{font-size:1.5vw;}
     border-left: 2px solid #333;
 }
 .skill p:nth-child(1){
-    width: 90px;
+    width: 40px;
 }
 .profile h2{
     font: 800 1rem/1rem 'Noto Sans KR','Roboto', sans-serif;
