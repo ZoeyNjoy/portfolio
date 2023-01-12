@@ -4,6 +4,13 @@
     src: url(./PPGrafier-BlackDisplay.woff) format('woff');
 }
 
+
+  /* 풀페이지 해제 */
+  #fullpage .section:not(.main_visual) { height: auto !important; }
+  #fullpage .section .fp-tableCell { height: auto !important; }
+
+
+
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none;}
