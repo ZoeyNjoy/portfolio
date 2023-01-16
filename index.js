@@ -90,22 +90,6 @@ anime({
     duration:3000
 });
 
-
-// 5번재 페이지 팝업
-/* $('.popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom',
-    image: {
-        verticalFit: true
-    },
-    zoom: {
-        enabled: true,
-        duration: 300
-    }
-}); */
-
 $('.popup').magnificPopup({
 	type: 'image',
 	closeOnContentClick: true,
