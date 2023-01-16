@@ -251,7 +251,7 @@ button::-moz-focus-inner {
 img.mfp-img {
   width: 100%;
   max-width: 100%;
-  min-height: 320px;
+  min-width: 320px;
   /* height: auto; */
   display: block;
   line-height: 0;
@@ -317,7 +317,7 @@ img.mfp-img {
     padding-left: 0;
     padding-right: 0; }
   .mfp-img-mobile img.mfp-img {
-    min-height: 320px;
+    min-width: 320px;
     padding: 0; }
   .mfp-img-mobile .mfp-figure:after {
     top: 0;
