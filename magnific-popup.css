@@ -249,15 +249,15 @@ button::-moz-focus-inner {
 
 /* Main image in popup */
 img.mfp-img {
-  width: 100%;
+  /* width: 100%; */
   max-width: 100%;
   min-width: 320px;
   /* height: auto; */
   display: block;
-  line-height: 0;
+  /* line-height: 0; */
   box-sizing: border-box;
   padding: 40px 0 40px;
-  margin: 0 auto;
+  margin: auto;
   overflow: scroll;
 }
 
@@ -304,6 +304,7 @@ img.mfp-img {
 
 .mfp-image-holder .mfp-content {
   max-width: 100%;
+  min-width: 320px;
 }
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
