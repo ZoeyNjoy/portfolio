@@ -322,13 +322,16 @@ body{font-size: 1vw;}
     width: 100%;
     color: initial;
 }
-#etc .slides li:hover a{
-    opacity: 0.8;
+#etc .slides li a .img{
+    width: 100%;
+    overflow: hidden;
+}
+#etc .slides li a:hover img:not(.tool img){
+    transform: scale(1.2);
     transition: all .3s ease-in-out;
 }
-#etc .slide li a img{
+#etc .slide li a .img img{
     width: 100%;
-    border: 1px solid #aaa;
     box-shadow: 10px 5px 10px #999;
     margin-bottom: 10px;
 }
