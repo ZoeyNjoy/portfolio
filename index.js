@@ -3,16 +3,12 @@ new fullpage(
     anchors:['1page','2page','3page','4page','5page'],
     menu: '.menu',
     onLeave: function(origin, destination, direction, trigger){
-        if(origin.index==0 && direction =='down'){
-            $('.profile .left').show(1000);
-            $('.profile .left').addClass('ani1');
-        }else if(origin.index==2 && direction =='up'){
-            $('.profile .left').show(1000);
-            $('.profile .left').addClass('ani1');
-        }else if(origin.index==1 && direction =='down'){
-            $('.profile .left').hide(500);
-        }else if(origin.index==1 && direction =='up'){
-            $('.profile .left').hide(500);
+        if((origin.index==0 && direction =='down') || (origin.index==2 && direction =='up')){
+            $('.profile').show();
+            $('.profile').addClass('in');
+        }else if((origin.index==1 && direction =='down') || (origin.index==1 && direction =='up')){
+            $('.profile').hide();
+            // $('.profile').addClass('out');
         }else if(origin.index==2 && direction =='down'){
             $('#etc .main .image').show(500);
             $('#etc .main .image').addClass('ani3');
@@ -38,8 +34,6 @@ new fullpage(
     slidesNavigation: true
     }
 );
-
-
 
 
 // 1page

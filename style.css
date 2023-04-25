@@ -56,21 +56,64 @@ body{font-size: 1vw;}
     margin: auto;
     display: flex;
     margin-top: 8%;
+    position: relative;
+    /* top: 0; */
 }
 .profile .left{
     width: 40%;
     position: relative;
-    left: 0;
 }
 
 .left .profileimg{
     width: 70%;
     margin-left: 15%;
+    /* border: 1px solid red; */
 }
-.profileimg img{
+.profileimg a img{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     border-radius: 50%;
+}
+
+.profileimg a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    position: relative;
+}
+.profileimg a:hover::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #00000036;
+    animation: fade .3s ease-in-out;
+}
+.profileimg a:hover::after{
+    content: '이력서 다운받기';
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .left p{
     width: 80%;
@@ -82,16 +125,16 @@ body{font-size: 1vw;}
     font-weight: 700;
     color: #b89dc0;
 }
-.profile .ani1{
-    animation: in .5s ease-in-out;
+.in{
+    animation: in .7s ease-in-out;
 }
 @keyframes in{
     from{
-        left: -500px;
+        top: 500px;
         opacity: 0;
     }
     to{
-        left: 0;
+        top: 0;
         opacity: 1;
     }
 }
