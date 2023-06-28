@@ -232,7 +232,8 @@ body{font-size: 1vw;}
     z-index: 3;
 }
 .slide .main img{
-    width: 60%;
+    width: 50%;
+    object-fit: cover;
     position: absolute;
     bottom: 0;
     right:0;
@@ -266,14 +267,14 @@ body{font-size: 1vw;}
     width: 35%;
 }
 .slide .main .sub p:nth-child(1){
-    font: 900 2rem/3rem 'Noto Sans KR','Roboto', sans-serif;
+    font: 900 1.5rem/2em 'Noto Sans KR','Roboto', sans-serif;
 }
 .slide .main .sub p:nth-child(1) span{
     font-size: .9rem;
     margin-left: 10px;
 }
 .slide .main .sub p:nth-child(2){
-    font: 500 1.5rem/3rem 'Noto Sans KR','Roboto', sans-serif;
+    font: 500 1.2rem/2em 'Noto Sans KR','Roboto', sans-serif;
 }
 .slide .main .sub p:nth-child(3){
     font: 300 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;

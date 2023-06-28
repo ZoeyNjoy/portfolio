@@ -124,8 +124,8 @@ body{font-size:1.5vw;}
 }
 .slide .main a{
     width: 200px;
-    top: 60%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     font: 800 1rem/2rem 'Noto Sans KR','Roboto', sans-serif;
 }
 
