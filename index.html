@@ -1,242 +1,468 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="웹퍼블리셔 박푸름의 포트폴리오">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="웹퍼블리셔 박푸름 포트폴리오">
-    <meta property="og:url" content="https://zoeynjoy.github.io/portfolio/">
-    <meta property="og:description" content="웹퍼블리셔 박푸름의 포트폴리오">
-    <title>웹퍼블리셔 박푸름 포트폴리오</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
-    <link rel="apple-touch-icon" href="./image/favicon.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./fullpage.js"></script>
-    <script src="./anime.js"></script>
-    <script src="./jquery.magnific-popup.min.js"></script>
-    <script src="./index.js" defer></script>
-    <link rel="stylesheet" href="./fullpage.css">
-    <link rel="stylesheet" href="./magnific-popup.css">
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style-ta.css" media="all and (min-width:768px) and (max-width:1024px)">
-    <link rel="stylesheet" href="./style-p.css" media="all and (max-width:768px)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="웹퍼블리셔 박푸름의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="웹퍼블리셔 박푸름 포트폴리오">
+  <meta property="og:url" content="#">
+  <meta property="og:description" content="웹퍼블리셔 박푸름의 포트폴리오">
+  <title>박푸름 포트폴리오 ver.2</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
+  <link rel="apple-touch-icon" href="./image/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="./anime.js"></script>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="./jquery.easypiechart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css" media="all and (min-width:768px) and (max-width:1023px)">
+  <link rel="stylesheet" href="./phone.css" media="all and (max-width:767px)">
 </head>
 <body>
-    <div class="menu">
+  <header id="header">
+    <div class="h_wrap">
+      <div class="logo"><a href="./index.html">ROORU</a></div>
+      <nav>
         <ul>
-            <li><a href="#1page">Home</a></li>
-            <li><a href="#2page">About</a></li>
-            <li><a href="#3page">Web</a></li>
-            <li><a href="#4page">Design</a></li>
-            <li><a href="#5page">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#foot">Contact</a></li>
         </ul>
+      </nav>
     </div>
-    <div id="wrap">
-        <div class="section" id="home">
-            <div class="bg">
-                <div class="txt">
-                    <p>P</p>
-                    <p>o</p>
-                    <p>r</p>
-                    <p>t</p>
-                    <p>f</p>
-                    <p>o</p>
-                    <p>l</p>
-                    <p>i</p>
-                    <p>o</p>
-                </div>
-            </div>
+    <div class="m_inner">
+      <a class="bar" href="#">
+        <span></span>          
+        <span></span>      
+        <span></span>          
+        <span></span>          
+        <span></span>          
+      </a>
+      <div class="depth02">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#foot">Contact</a></li>
+        </ul>
+      </div>
+    </div><!--minner-->
+  </header><!--header-->
+  <main>
+    <div class="home" id="home">
+      <div class="hello">
+        <div class="title tit1">
+          <p>혹</p>
+          <p>시</p>
+          <p>.</p>
+          <p>.</p>
+          <p>.</p>
         </div>
-        <div class="section" id="about">
-            <div class="profile">
-                <div class="left">
-                    <div class="profileimg">
-                        <a href="./Park_Purum.pdf" download>
-                            <img src="./image/profile.jpg" alt="프로필">
-                        </a>
-                    </div>
-                    <p>배움을 통해 성장하는</p><p>웹 퍼블리셔<span>박푸름</span>입니다.</p>
-                </div>
-                <div class="right">
-                    <div class="about">
-                        <h2>About Me</h2>
-                        <p><span>Name</span>박푸름 / Park Purum</p>
-                        <p><span>Birth</span>1991.09.11.</p>
-                        <p><span>Phone</span>010-0000-0000</p>
-                        <p><span>E-Mail</span>nomail@naver.com</p>
-                    </div>
-                    <div class="edu">
-                        <h2>Education</h2>
-                        <ul>
-                            <li>
-                                <span>2022.08.</span>구리 이젠 아카데미 수료<br>모바일 UI/UX 반응형 웹디자인(웹퍼블리셔)_혼합
-                            </li>
-                            <li>
-                                <span>2015.02.</span>신한대학교 중국어학과 졸업
-                            </li>
-                            <li>
-                                <span>2010.02.</span>의정부 송현고등학교 졸업
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="work">
-                        <h2>Work</h2>
-                        <ul>
-                            <li><span>2019-2021</span>KBS 미디어 인터넷 서비스부</li>
-                            <li><span>2018-2019</span>스튜디오 ZIP</li>
-                            <li><span>2015-2017</span>신한대학교 교양학부</li>
-                        </ul>
-                    </div>
-                    <div class="skill">
-                        <h2>Skill</h2>
-                        <ul>
-                            <li>
-                                <p>Photoshop</p>
-                                <p class="per per1"></p>
-                            </li>
-                            <li>
-                                <p>HTML</p>
-                                <p class="per  per2"></p>
-                            </li>
-                            <li>
-                                <p>Illustrator</p>
-                                <p class="per per3"></p>
-                            </li>
-                            <li>
-                                <p>CSS</p>
-                                <p class="per per4"></p>
-                            </li>
-                            <li>
-                                <p>JS</p>
-                                <p class="per per5"></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>                    
-            </div>
+        <div class="title tit2">
+          <p class="point">웹 디자이너</p>
+          <p>찾으세요?</p>
         </div>
-        <div class="section" id="web">
-            <div class="slide" data-anchor="slide1">
-                <div class="main">
-                    <img src="./image/ilsang.gif" alt="투썸플레이스">
-                    <div class="sub">
-                        <p>일상과 여행 사이<span>(클론코딩)</span></p>
-                        <p>
-                            기존 사이트의 틀을 가지고 오면서 스크롤 효과를 넣어 기존의 밋밋한 사이트에서 동적인 느낌을 추가하였으며,<br>
-                            간단하게 서브페이지 넣어보았습니다.
-                        </p>
-                        <p>제작기간 : 1주 / 개인작업물</p>
-                    </div>
-                    <a href="https://zoeynjoy.github.io/ilsangtrip/" target="_blank">
-                        사이트 바로가기
-                        <img src="./image/arrow.png" alt="바로가기 화살표">
-                    </a>
-                </div>
-            </div>
-            <div class="slide" data-anchor="slide2">
-                <div class="main">
-                    <img src="./image/rejour.png" alt="투썸플레이스">
-                    <div class="sub">
-                        <p>르주르<span>(클론코딩)</span></p>
-                        <p>기존 사이트를 그대로 가지고 오면서 반응형 페이지로 제작해보았습니다.</p>
-                        <p>제작기간 : 5주 / 개인작업물</p>
-                    </div>
-                    <a href="https://zoeynjoy.github.io/rejour/" target="_blank">
-                        사이트 바로가기
-                        <img src="./image/arrow.png" alt="바로가기 화살표">
-                    </a>
-                </div>
-            </div>
-            <div class="slide" data-anchor="slide3">
-                <div class="main">
-                    <img src="./image/twosome.png" alt="투썸플레이스">
-                    <div class="sub">
-                        <p>투썸플레이스<span>(리디자인)</span></p>
-                        <p>기존 사이트를 반응형 페이지로 제작해보았습니다.</p>
-                        <p>제작기간 : 2주 / 개인작업물</p>
-                    </div>
-                    <a href="https://zoeynjoy.github.io/twosome/" target="_blank">
-                        사이트 바로가기
-                        <img src="./image/arrow.png" alt="바로가기 화살표">
-                    </a>
-                </div>
-            </div>
-            <div class="slide" data-anchor="slide4">
-                <div class="main">
-                    <img src="./image/sonatural.png" alt="쏘내추럴">
-                    <div class="sub">
-                        <p>쏘내추럴<span>(리디자인)</span></p>
-                        <p>기존 사이트를 반응형 페이지로 제작해보았습니다.</p>
-                        <p>제작기간 : 6주 / 개인작업물</p>
-                    </div>
-                    <a href="https://zoeynjoy.github.io/sonatural" target="_blank">
-                        사이트 바로가기
-                        <img src="./image/arrow.png" alt="바로가기 화살표">
-                    </a>
-                </div>
-            </div>
+      </div><!--인사-->  
+      <div class="mscl">
+        <svg version="1.1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+          <path class="st0" d="M30.5,43.8h-0.9c-6.6,0-12-5.4-12-12V17.3c0-6.6,5.4-12,12-12h0.9c6.6,0,12,5.4,12,12v14.5 C42.5,38.4,37.1,43.8,30.5,43.8z"/>
+          <polyline class="st1" points="-4.6,43.8 -9.9,49.2 -15.2,43.8 "/>
+          <line class="st1" x1="30" y1="16.3" x2="30" y2="10.2"/>
+        </svg>
+      </div><!--마우스이미지-->
+    </div><!--home-->
+    <div class="about" id="about">
+      <section>
+        <div class="left">
+          <a href="#">
+            <img src="./image/profile.jpg" alt="박푸름 프로필 사진">
+          </a>
+        </div><!--left 프로필사진-->
+        <div class="right">
+          <div class="int">
+            <h1 class="typing">안녕하세요!<br>웹 디자이너 박푸름입니다</h1>
+            <p>저는 마크업과 반응형 웹도 가능한 디자이너로서</p>
+            <p>언제나 성실함을 무기로 포기하지 않고 트랜드에 맞게 디자인을 하려고 노력하겠습니다</p>
+            <p>또한 처음부터 완벽한 사람이라고 말하지 못하지만</p>
+            <p>차근차근 해결해가며 점점 더 완성되는 제가 되고싶습니다</p>
+            <p class="click"><a href="./introduce.html">이력서보기</a></p>
+          </div><!--자기소개-->
         </div>
-        <div class="section" id="etc">
-            <div class="slide">
-                <div class="slides">
-                    <h1>상세페이지</h1>
-                    <ul>
-                        <li>
-                            <a href="./image/img1-1.jpg" class="popup" title="포토샵, 일러스트">
-                                <div class="img">
-                                    <img src="./image/img1.png" alt="이미지1">
-                                </div>
-                                <P>파스타 상세페이지</P>
-                                <p class="tool">사용툴 : <img src="./image/ps.svg" alt=""><img src="./image/ai.svg" alt=""></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./image/img2-1.jpg" class="popup" title="포토샵">
-                                <div class="img">
-                                    <img src="image/img2.jpg" alt="이미지2">
-                                </div>
-                                <P>향수 이벤트페이지</P>
-                                <p class="tool">사용툴 : <img src="./image/ps.svg" alt=""></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./image/img3-1.jpg" class="popup" title="포토샵, 일러스트">
-                                <div class="img">
-                                    <img src="./image/img3.jpg" alt="이미지3">
-                                </div>
-                                <P>원두 상세페이지</P>
-                                <p class="tool">사용툴 : <img src="./image/ps.svg" alt=""><img src="./image/ai.svg" alt=""></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./image/img4-1.jpg" class="popup" title="포토샵">
-                                <div class="img">
-                                    <img src="./image/img4.jpg" alt="이미지4">
-                                </div>
-                                <P>화장품 상세페이지</P>
-                                <p class="tool">사용툴 : <img src="./image/ps.svg" alt=""></p>
-                            </a>
-                        </li>
-                    </ul>
+      </section>
+    </div><!--about-->
+    <div class="skill" id="skill">
+      <section>
+        <div class="cPs chart" data-percent="100">
+          <canvas></canvas>
+          <p class="txt"><span>Ps</span><br>100%</p>
+        </div><!--포토샵-->
+        <div class="cAi chart" data-percent="90">
+          <canvas></canvas>
+          <p class="txt"><span>Ai</span><br>90%</p>
+        </div><!--일러-->
+        <div class="cHtml chart" data-percent="90">
+          <canvas></canvas>
+          <p class="txt"><span>html</span><br>90%</p>
+        </div><!--html-->
+        <div class="cCss chart" data-percent="90">
+          <canvas></canvas>
+          <p class="txt"><span>css</span><br>90%</p>
+        </div><!--css-->
+        <div class="cJs chart" data-percent="50">
+          <canvas></canvas>
+          <p class="txt"><span>js</span><br>50%</p>
+        </div><!--js-->
+      </section>
+    </div><!--skill-->
+    <div class="works" id="works"  data-scroll>
+      <div class="cate">
+        <a href="javascript:void(0);" class="active">All</a>
+        <a href="javascript:void(0);">Web</a>
+        <a href="javascript:void(0);">Design</a>
+        <a href="javascript:void(0);">Ps</a>
+      </div><!--works cate-->
+      <section class="all menu_list">
+        <div class="worksMenu">
+          <div class="worksList design">
+            <a href="#"><img src="./image/img2.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img2-1.jpg" alt="이미지">
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img4.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img4-1.jpg" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img10.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img10-1.jpg" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/ilsangtrip/" target="_blank"><img src="./image/web01.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>일상과 여행사이</li>
+                  <li>반응형페이지</li>
+                  <li>메인, 서브(brand)페이지</li>
+                  <li>Swiper, observer</li>
+                  <li>1주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/rejour/" target="_blank"><img src="./image/web02.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>르주르</li>
+                  <li>반응형페이지</li>
+                  <li>메인페이지</li>
+                  <li>Swiper</li>
+                  <li>5주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img3.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img3-1.jpg" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/twosome/" target="_blank"><img src="./image/web03.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>투썸플레이스</li>
+                  <li>반응형페이지</li>
+                  <li>서브페이지</li>
+                  <li>Swiper</li>
+                  <li>2주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img1.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img1-1.jpg" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img5.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img5-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img7.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img7-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img8.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img8-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img9.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img9-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/sonatural/" target="_blank"><img src="./image/web04.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>쏘내추럴</li>
+                  <li>반응형페이지</li>
+                  <li>메인페이지</li>
+                  <li>Swiper</li>
+                  <li>6주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="section" id="foot">
-            <div class="f_txt">
-                <p class="title">Contact</p>
-                <p>지금까지 웹디자인 박푸름의 포트폴리오를 봐주셔서 감사합니다.</p>
-                <p><span>010-0000-0000</span> / <span>nomail@naver.com</span></p>
-            </div>
-            <p class="bgtxt">WEBPUBLISHER</p>
-            <p class="bgtxt">WEBPUBLISHER</p>
-            <div class="copy">
-                <p>ⓒ 2023 Park Purum. ALL RIGHTS RESERVED.</p>
-                <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
-            </div>
+        <a href="#" id="btn">more</a>
+      </section><!--works all-->
+      <section class="web menu_list">
+        <div class="worksMenu">
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/ilsangtrip/" target="_blank"><img src="./image/web01.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>일상과 여행사이</li>
+                  <li>반응형페이지</li>
+                  <li>메인, 서브(brand)페이지</li>
+                  <li>Swiper, observer</li>
+                  <li>1주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/rejour/" target="_blank"><img src="./image/web02.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>르주르</li>
+                  <li>반응형페이지</li>
+                  <li>메인페이지</li>
+                  <li>Swiper</li>
+                  <li>5주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/twosome/" target="_blank"><img src="./image/web03.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>투썸플레이스</li>
+                  <li>반응형페이지</li>
+                  <li>서브페이지</li>
+                  <li>Swiper</li>
+                  <li>2주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="worksList web">
+            <a href="https://zoeynjoy.github.io/sonatural/" target="_blank"><img src="./image/web04.jpg" alt="이미지">
+              <div class="txt">
+                <ul>
+                  <li>쏘내추럴</li>
+                  <li>반응형페이지</li>
+                  <li>메인페이지</li>
+                  <li>Swiper</li>
+                  <li>6주/개인작업물</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
+      </section><!--works web-->
+      <section class="design1 menu_list">
+        <div class="worksMenu">
+          <div class="worksList design">
+            <a href="#"><img src="./image/img2.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+            <div class="full">
+              <div class="cont">
+                <img src="./image/img2-1.jpg" alt="이미지">
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img1.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+            <div class="full">
+              <div class="cont">
+                <img src="./image/img1-1.jpg" alt="이미지">
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img10.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+            <div class="full">
+              <div class="cont">
+                <img src="./image/img10-1.jpg" alt="이미지">
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img3.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+            <div class="full">
+              <div class="cont">
+                <img src="./image/img3-1.jpg" alt="이미지">
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img4.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+            <div class="full">
+              <div class="cont">
+                <img src="./image/img4-1.jpg" alt="이미지">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--works 상세-->
+      <section class="design1 menu_list">
+        <div class="worksMenu">
+          <div class="worksList design">
+            <a href="#"><img src="./image/img5.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img5-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img7.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img7-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img8.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img8-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="worksList design">
+            <a href="#"><img src="./image/img9.jpg" alt="이미지"></a>
+            <div class="fullwrap">
+              <div class="full">
+                <div class="cont">
+                  <img src="./image/img9-1.png" alt="이미지">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--works 포샵-->
+    </div><!--works-->
+  </main>
+  <footer id="foot">
+    <div class="contact">
+      <div class="fCon">
+        <h2>Contact</h2>
+        <p>저의 포트폴리오를 봐주셔서 감사합니다.</p>
+        <p>rumrum911@naver.com</p>
+      </div>
+      <div class="fSlideWrap">
+        <div class="swiper fSlide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>그림그리기</p>
+              <img src="./image/f01.png" alt="이미지">
+            </div>
+            <div class="swiper-slide">
+              <p>카페투어</p>
+              <img src="./image/f02.JPG" alt="이미지">
+            </div>
+            <div class="swiper-slide">
+              <p>맛집투어</p>
+              <img src="./image/f03.jpeg" alt="이미지">
+            </div>
+            <div class="swiper-slide">
+              <p>중국어공부</p>
+              <img src="./image/f04.jpeg" alt="이미지">
+            </div>
+          </div><!--swiper-wrapper-->
+        </div><!--스와이퍼끝-->
+      </div>
     </div>
+    <div class="fBottom">
+      <p>ⓒ 2023 Park Purum. ALL RIGHTS RESERVED.</p>
+      <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</p>
+    </div>
+  </footer>
 </body>
 </html>

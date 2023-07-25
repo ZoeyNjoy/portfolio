@@ -1,0 +1,437 @@
+/* 헤더 */
+header .h_wrap{
+  width: calc(100% - 32px);
+  min-width: 320px;
+}
+.h_wrap nav{
+  display: none;
+}
+
+/* 모바일메뉴 */
+#header .m_inner{
+  display: block;
+}
+header .logo{
+  width: 30%;
+  height: 30px;
+  z-index: 200;
+  overflow: hidden;
+}
+/* 햄버거바 */
+header .bar{
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  z-index: 100;
+  bottom:0%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+header .bar,
+header .bar span{
+display: inline-block;
+transition: all .4s;
+box-sizing: border-box;
+}
+header .bar span{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 4px;
+}
+header .bar span:nth-of-type(1){
+  top: 0;
+}
+header .bar span:nth-of-type(2){
+  top: 25%;
+  width: 60%;
+}
+header .bar span:nth-of-type(3){
+  top: 50%;
+}
+header .bar span:nth-of-type(4){
+  top: 75%;
+  width: 60%;
+}
+header .bar span:nth-of-type(5){
+  top: 100%;
+}
+header .bar.active span:nth-of-type(1){
+  -webkit-transform: translateY(15px) rotate(-45deg);
+  transform: translateY(15px) rotate(-45deg);
+}
+header .bar.active span:nth-of-type(2){
+  opacity: 0;
+}
+header .bar.active span:nth-of-type(3){  
+  opacity: 0;
+}
+header .bar.active span:nth-of-type(4){
+  opacity: 0;
+}
+header .bar.active span:nth-of-type(5){
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-15px) rotate(45deg);
+}
+
+/* 모바일 메뉴 */
+.m_inner .depth02{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 35vh;
+  border-bottom: 1px solid #bbb;
+  background-color: white;
+  padding-top: 120px;
+}
+.depth02 ul{
+  width: 100%;
+}
+.depth02 li{
+  text-align: center;
+  font:500 1.3rem/3em var(--basicFont);
+}
+
+/* home */
+.home .hello{
+  width: 80%;
+  min-width: 320px;
+  top: 70%;
+  left: 50px;
+  font: 100 2.5rem/1em var(--boldFont);
+}
+.tit2 .point{
+  width: 100%;
+  font: 100 4rem/1em var(--boldFont);
+}
+
+/* about */
+main .about{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 300px;
+}
+.about section{
+  width: calc(100% - 32px);
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+.about section .left{
+  width: 60%;
+  margin: auto;
+}
+.about section .right{
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+.right .typing{
+  width: 80%;
+  margin: auto;
+  font: 500 2.5rem var(--boldFont);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.right .int {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+.right .int::after{
+  content: '';
+  display: block;
+  margin-top: 25%;
+}
+
+
+/* skill */
+main .skill{
+  width: 100%;
+  margin-top: 250px;
+}
+.skill section{
+  width: calc(100% - 32px);
+  min-width: 320px;
+}
+.skill section .chart{
+  width: 50%;
+  margin-bottom: 120px;
+}
+.chart canvas{
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+} 
+.chart canvas:nth-of-type(1){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+.chart:nth-of-type(5){
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* works */
+main .works{
+  width: 100%;
+  margin-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  background-color: var(--bgColor);
+}
+.works .cate{
+  width: calc(100% - 32px);
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+}
+.cate a{
+  width: 25%;
+  text-align: center;
+  display: block;
+  margin-right: 0px;
+  font: 700 1.3rem/3em var(--basicFont);
+}
+.works .menu_list{
+  width: calc(100% - 32px);
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+}
+.worksMenu .worksList{
+  width: 48%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+
+.all .worksMenu .worksList{
+  display: none;
+}
+.all #btn{
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font: 100 1.2rem/3em var(--boldFont);
+  background-color: var(--whiteColor);
+}
+.all #btn:hover{
+  color: var(--whiteColor);
+  background-color: var(--pointColor);
+  transition: all .2s;
+}
+
+
+/* full */
+
+.fullwrap .full .cont{
+  width: 90%;
+  height: 60%;
+}
+
+
+
+
+/* footer */
+footer{
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+/* 끝인사 */
+footer .contact{
+  width: calc(100% - 32px);
+  min-width: 320px;
+}
+.contact .fCon{
+  width: 100%;
+}
+.contact .fCon p{
+  width: 80%;
+  margin: auto;
+}
+.contact .fCon p:nth-of-type(1){
+  margin-top: 30px;
+}
+
+/* 푸터 슬라이드 */
+.contact .fSlideWrap{
+  width:50%;
+  margin: auto;
+  margin-top: 0px;
+}
+.contact .fSlideWrap::before{
+  content: '';
+  display: block;
+  margin-top: 20%;
+}
+.fSlide .swiper-slide p{
+  display: none;
+}
+.fSlide .swiper-slide:hover p::before{
+  content: '';
+  display: block;
+  margin-top: 50%;
+}
+.fSlide .swiper-slide:hover p::after{
+  content: '';
+  display: block;
+  margin-bottom: 50%;
+}
+
+
+
+footer .fBottom{
+  width: calc(100% - 32px);
+  margin: auto;
+  margin-top: 0;
+}
+footer .fBottom::before{
+  content: '';
+  display: block;
+  margin-top: 30%;
+}
+.fBottom p{
+  font: 300 1.3rem/1.5em var(--basicFont);  
+}
+.fBottom p:nth-of-type(2){
+  margin-top: 20px;
+  font: 300 .9rem/1.2em var(--basicFont);
+}
+
+
+
+
+/*------------------ 서브페이지 ------------------*/
+
+/* 서브헤더 */
+.headerwrap .nav{
+  width: calc(100% - 32px);
+  min-width: 320px;
+}
+.headerwrap .logo{
+  width: 30%;
+}
+/* 서브메인 */
+.mainwrap{
+  width: 100%;
+}
+/* 서브메인 소개 */
+.mainwrap section{
+  width: calc(100% - 32px);
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+  padding: 200px 0 100px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+/* 서브소개 이미지 */
+.mainwrap section .left{
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.mainwrap section .left img{
+  width: 100%;
+  object-fit: cover;
+}
+/* 서브소개 자소서부분 */
+.mainwrap section .right{
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+.mainwrap section .right h1{
+  width: 80%;
+  margin: auto;
+  font: 500 2.5rem var(--boldFont);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.mainwrap section .right ul{
+  width: 80%;
+  margin: auto;
+}
+.mainwrap section .right li{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font: 300 1.3rem/2em var(--basicFont);
+}
+.mainwrap section .right li span{
+  width: 25%;
+  display: block;
+}
+.mainwrap section .right li .small{
+  width: 75%;
+  margin-left: 25%;
+  font: 400 1rem/2em var(--basicFont);
+}
+
+/* 서브경력 */
+.mainwrap section:nth-of-type(2) li,
+.mainwrap section:nth-of-type(3) li{
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+.mainwrap section:nth-of-type(2) h2,
+.mainwrap section:nth-of-type(3) h2{
+  width: 100%;
+  font: 500 1.3rem/2em var(--basicFont);
+}
+.mainwrap section:nth-of-type(2) p,
+.mainwrap section:nth-of-type(3) p{
+  width: 100%;
+  font: 500 1.3rem/1.5em var(--basicFont);  
+}
+.mainwrap section:nth-of-type(2) .txt{
+  width: 100%;
+  margin-left: 0%;
+  font: 300 1rem/1.5em var(--basicFont);
+}
+
+.mainwrap section:nth-of-type(3) li p span{
+  font: 300 1rem/1em var(--basicFont);
+  color: #aaa;
+}
+
+
+
+
+
+
+.slidewrap{
+  width: 100%;
+  margin: auto;
+}
+.slidewrap .slide{
+  width: calc(100% - 32px);
+  min-width: 320px;
+}
