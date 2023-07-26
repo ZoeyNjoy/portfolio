@@ -28,14 +28,12 @@ $(function(){
   
   // intro anime
   anime({
-    targets: '.logo a',
-    keyframes: [
-      {translateY: 0,
-        duration:300,},
-      {translateY: 35},
-    ],
+    targets: '.logo a p',
+    delay:anime.stagger(100),
+    translateY:[ 35, 0, 0],
     direction:'alternate',
     easing: 'easeInExpo',
+    duration:1500,
     loop:true
   });
   anime({
@@ -68,11 +66,15 @@ $(function(){
     e.forEach((typing)=>{
       if(typing.isIntersecting){
         typing.target.style.opacity=1;
-      //타자
-        new TypeIt('.typing')
-        .pause(1000).go();      
-      }else{
-        typing.target.style.opacity=0;
+        anime({
+          targets: '.right .typing p',
+          delay:anime.stagger(50),
+          translateY:[150,0],
+          direction:'normal',
+          easing: 'easeInOutBack',
+          duration:1000
+        });  
+
       }
     })
   });
@@ -122,11 +124,11 @@ $(function(){
 
 	})
 
-  ScrollOut({
-    onShown : ()=>{
-    }
+  // ScrollOut({
+  //   onShown : ()=>{
+  //   }
 
-  });
+  // });
 
   //탭게시물
 setTimeout(function(){

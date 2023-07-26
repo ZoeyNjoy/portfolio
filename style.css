@@ -40,7 +40,7 @@ header .logo{
 header .logo a{
   width: 100%;
   line-height: 50px;
-  display: block;
+  display: flex;
   font:500 1.5rem var(--boldFont);
   color: var(--fontColor);
 }
@@ -126,7 +126,7 @@ main .home{
   width: 80px;
   position: absolute;
   bottom: 0;
-  left: 48%;
+  left: 45%;
 }
 .mscl .st0{fill:none;stroke:#000000;stroke-miterlimit:10; stroke-width: 3px;}
 .mscl .st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10; stroke-width: 3px;}
@@ -160,10 +160,6 @@ main .about{
   width: 63%;
   position: relative;
 }
-.right .typing{
-  font: 500 3rem var(--boldFont);
-  margin-bottom: 50px;
-}
 .right .int {
   width: 100%;
   height: 100%;
@@ -172,6 +168,28 @@ main .about{
   content: '';
   display: block;
   margin-top: 15%;
+}
+.right .typing {
+  width: 80%;
+  margin-bottom: 50px;
+}
+.right .typing .typt,
+.right .typing .typb{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.right .typing p{
+  width: 43px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  font: 500 3rem/1em var(--boldFont);
+}
+.right .typb p:nth-of-type(1),
+.right .typb p:nth-of-type(5){
+  margin-right: 15px;
 }
 .int p{
   width: 100%;
@@ -538,7 +556,7 @@ footer .fBottom{
   width: 100%;
   height: 50px;
   line-height: 50px;
-  display: block;
+  display: flex;
   font:500 1.5rem var(--boldFont);
   color: var(--fontColor);
 }

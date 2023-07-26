@@ -136,12 +136,18 @@ main .about{
   position: relative;
   top: -30px;
 }
-.right .typing{
-  width: 80%;
+.right .typing {
+  width: 75%;
   margin: auto;
-  font: 500 2.5rem var(--boldFont);
   margin-bottom: 50px;
-  text-align: center;
+}
+.right .typing .typt,
+.right .typing .typb{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .right .int {
   width: 80%;
@@ -159,7 +165,7 @@ main .about{
 /* skill */
 main .skill{
   width: 100%;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 .skill section{
   width: calc(100% - 32px);
@@ -167,7 +173,7 @@ main .skill{
 }
 .skill section .chart{
   width: 50%;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 .chart canvas{
   width: 100%;
@@ -192,7 +198,7 @@ main .skill{
 /* works */
 main .works{
   width: 100%;
-  margin-top: 200px;
+  margin-top: 150px;
   padding-top: 100px;
   padding-bottom: 100px;
   box-sizing: border-box;

@@ -43,12 +43,34 @@ main .home{
   width: 100%;
   position: relative;
 }
-.right .typing{
-  font: 500 2.5rem var(--boldFont);
+.right .typing {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
   position: absolute;
   top: -48%;
-  left: 37%;
+  left: 37%
 }
+.right .typing .typt,
+.right .typing .typb{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right .typing p{
+  width: 43px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font: 500 3rem var(--boldFont);
+}
+.right .typb p:nth-of-type(1),
+.right .typb p:nth-of-type(5){
+  margin-right: 15px;
+}
+
+
 .right .int {
   width: 100%;
   height: 80%;
