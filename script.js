@@ -74,7 +74,14 @@ $(function(){
           easing: 'easeInOutBack',
           duration:1000
         });  
-
+        anime({
+          targets: '.int p',
+          delay:anime.stagger(100),
+          opacity:[0, 1],
+          direction:'normal',
+          easing: 'easeInOutBack',
+          duration:1500
+        }); 
       }
     })
   });
